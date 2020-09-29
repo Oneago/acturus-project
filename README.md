@@ -1,10 +1,10 @@
-# Engineering Guidelines
+# Oneago PHP Template
 
-## Introduccion
+Esta es la estructura básica de un proyecto PHP para desarrollos de [Oneago](https://www.oneago.com)
 
-Para mantener una buena estructura en todos los proyectos que se ejecuten en la organización y que todos comprendan de forma fácil y rápida cualquier proyecto de ser necesario se establece los siguientes Gidelines.
+vease este proyecto en [packagist.org](https://packagist.org/packages/oneago/oneago-php-template)
 
-⚠️  Cualquier código deberá ser escrito en inglés por buenas prácticas en el desarrollo de software
+## Primeros pasos
 
 ⚠️  Es importante que para el uso de este framework se debe usar la versión de PHP 7.0 o superior.
 
