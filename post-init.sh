@@ -4,10 +4,6 @@ if ! [ -f .env ]; then
   cp .env.example .env
 fi;
 
-if ! [ -f phinx.php ]; then
-  vendor/bin/phinx init .
-fi;
-
 if ! [ -d db/migrations ]; then
   mkdir -p db/migrations
 fi;
