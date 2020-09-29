@@ -12,7 +12,6 @@ class CreateView extends Command
     private $viewName;
     private $modelName;
 
-    /** @noinspection PhpParamsInspection */
     protected function configure()
     {
         $this
@@ -21,7 +20,6 @@ class CreateView extends Command
             ->setHelp("This command create a new view passing a name");
     }
 
-    /** @noinspection PhpParamsInspection */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $this->viewName = $input->getArgument('view name') . ".twig";
