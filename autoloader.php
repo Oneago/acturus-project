@@ -9,14 +9,17 @@ require_once "vendor/autoload.php";
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-ini_set("display_errors", $_ENV["DEBUG_MODE"]);
-ini_set("display_startup_errors", $_ENV["DEBUG_MODE"]);
-error_reporting(E_ALL);
-
+if ($_ENV["DEBUG_MODE"]) {
 // Start whoops
-$whoops = new Run;
-$whoops->pushHandler(new PrettyPageHandler);
-$whoops->register();
+    $whoops = new Run;
+
+// Configure the PrettyPageHandler:
+    $errorPage = new PrettyPageHandler();
+    $errorPage->setPageTitle("Oneago app is broken!"); // Set the page's title
+    $errorPage->setEditor("idea");                    // Set the editor used for the "Open" link
+    $whoops->pushHandler($errorPage);
+    $whoops->register();
+}
 
 // Start autoload
 $loader = new Nette\Loaders\RobotLoader;
