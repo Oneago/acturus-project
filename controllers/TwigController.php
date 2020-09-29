@@ -6,6 +6,7 @@ use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 use Twig\Loader\FilesystemLoader;
+use Twig\TwigFunction;
 
 
 /**
@@ -24,9 +25,14 @@ class TwigController
         $loader = new FilesystemLoader($this->templatesPath);
         $this->templateEngine = new Environment($loader, [
             "debug" => $_ENV["DEBUG_MODE"],
-            "cache" => false,
-            "scriptName" => $_SERVER["SCRIPT_NAME"]
+            "cache" => false
         ]);
+        $this->templateEngine->addFunction(new TwigFunction('getCss', function ($cssFile) {
+            return sprintf('/css/%s', ltrim($cssFile, '/'));
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getScriptName', function () {
+            return $_SERVER["SCRIPT_NAME"];
+        }));
     }
 
     /**

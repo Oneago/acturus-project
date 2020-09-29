@@ -39,6 +39,11 @@
     "fzaninotto/faker": "^1.9",
     "phpunit/phpunit": "^9.3"
   },
+  "autoload": {
+    "psr-4": {
+      "MyApp\\": "public"
+    }
+  },
   "scripts": {
     "post-install-cmd": [
       "@postInstall"
