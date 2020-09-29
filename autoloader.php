@@ -9,14 +9,14 @@ require_once "vendor/autoload.php";
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+ini_set("display_errors", $_ENV["DEBUG_MODE"]);
+ini_set("display_startup_errors", $_ENV["DEBUG_MODE"]);
+error_reporting(E_ALL);
+
 // Start whoops
 $whoops = new Run;
 $whoops->pushHandler(new PrettyPageHandler);
 $whoops->register();
-
-ini_set("display_errors", $_ENV["DEBUG_MODE"]);
-ini_set("display_startup_errors", $_ENV["DEBUG_MODE"]);
-error_reporting(E_ALL);
 
 // Start autoload
 $loader = new Nette\Loaders\RobotLoader;
