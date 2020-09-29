@@ -14,3 +14,6 @@ gen
 !/.idea/modules.xml
 !/.idea/codestream.xml
 !/.idea/l.iml
+
+### .env
+.env
