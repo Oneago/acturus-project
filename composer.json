@@ -38,5 +38,13 @@
     "symfony/console": "^5.1",
     "fzaninotto/faker": "^1.9",
     "phpunit/phpunit": "^9.3"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@postInstall"
+    ],
+    "postInstall": [
+      "./post-init.sh"
+    ]
   }
 }
