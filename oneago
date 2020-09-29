@@ -3,10 +3,6 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
-use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
 
 // Start autoload
 $loader = new Nette\Loaders\RobotLoader;
@@ -18,5 +14,7 @@ $loader->register(); // Run the RobotLoader
 $application = new Application();
 
 $application->add(new CreateView());
+$application->add(new RunPhpServer());
 
+/** @noinspection PhpUnhandledExceptionInspection */
 $application->run();
