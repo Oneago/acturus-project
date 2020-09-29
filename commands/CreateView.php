@@ -30,7 +30,7 @@ class CreateView extends Command
         exec("git add .");
 
         $output->writeln("<info>{$input->getArgument('view name')} view has created!</info>");
-        return 0;
+        return Command::SUCCESS;
     }
 
     private function createFile(string $name, string $url, string $path)

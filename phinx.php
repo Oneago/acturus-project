@@ -1,5 +1,12 @@
 <?php
 
+require_once "vendor/autoload.php";
+require_once "DotEnvConfig.php";
+
+$dotenv = new DotEnvConfig();
+$dotenv->initConfigs();
+
+
 return
     [
         'paths' => [
@@ -10,21 +17,21 @@ return
             'default_migration_table' => 'phinxlog',
             'default_environment' => 'development',
             'production' => [
-                'adapter' => 'mysql',
-                'host' => 'localhost',
-                'name' => 'production_db',
-                'user' => 'root',
-                'pass' => '',
-                'port' => '3306',
+                'adapter' => $_ENV["PRODUCTION_DB_ADAPTER"],
+                'host' => $_ENV["PRODUCTION_DB_HOST"],
+                'name' => $_ENV["PRODUCTION_DB_NAME"],
+                'user' => $_ENV["PRODUCTION_DB_USER"],
+                'pass' => $_ENV["PRODUCTION_DB_PASS"],
+                'port' => $_ENV["PRODUCTION_DB_PORT"],
                 'charset' => 'utf8',
             ],
             'development' => [
-                'adapter' => 'mysql',
-                'host' => 'localhost',
-                'name' => 'development_db',
-                'user' => 'root',
-                'pass' => '',
-                'port' => '3306',
+                'adapter' => $_ENV["DEBUG_DB_ADAPTER"],
+                'host' => $_ENV["DEBUG_DB_HOST"],
+                'name' => $_ENV["DEBUG_DB_NAME"],
+                'user' => $_ENV["DEBUG_DB_USER"],
+                'pass' => $_ENV["DEBUG_DB_PASS"],
+                'port' => $_ENV["DEBUG_DB_PORT"],
                 'charset' => 'utf8',
             ],
             'testing' => [
