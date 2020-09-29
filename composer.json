@@ -1,0 +1,42 @@
+{
+  "name": "oneago/oneago-php-template",
+  "description": "Basic structure for php projects used by Oneago",
+  "type": "project",
+  "keywords": [
+    "oneago",
+    "php",
+    "basic",
+    "template",
+    "project"
+  ],
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "jruedaq",
+      "email": "jrueda@oneago.com",
+      "homepage": "https://www.juandavid.dev",
+      "role": "Developer"
+    },
+    {
+      "name": "Oneago",
+      "email": "support@oneago.com",
+      "homepage": "https://www.oneago.com/",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "twig/twig": ">=3.0",
+    "robmorgan/phinx": ">=0.12.4",
+    "vlucas/phpdotenv": ">=5.2",
+    "filp/whoops": ">=2.7",
+    "nette/robot-loader": ">=3.3",
+    "php": ">=7.0",
+    "ext-mysqli": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "symfony/console": ">=5.1",
+    "fzaninotto/faker": ">=1.9",
+    "phpunit/phpunit": ">=9.3"
+  }
+}

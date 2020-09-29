@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+require __DIR__ . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+// Start autoload
+$loader = new Nette\Loaders\RobotLoader;
+$loader->addDirectory(__DIR__ . "/commands");
+$loader->setTempDirectory(__DIR__ . "/temp");
+$loader->register(); // Run the RobotLoader
+
+
+$application = new Application();
+
+$application->add(new CreateView());
+
+$application->run();

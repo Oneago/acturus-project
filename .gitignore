@@ -1,0 +1,16 @@
+### Composer files
+composer.phar
+/vendor/
+/temp/
+
+### IntelliJ project files
+.idea
+*.iml
+out
+gen
+!/.idea/workspace.xml
+!/.idea/php.xml
+!/.idea/misc.xml
+!/.idea/modules.xml
+!/.idea/codestream.xml
+!/.idea/l.iml
