@@ -30,6 +30,9 @@ class TwigController
         $this->templateEngine->addFunction(new TwigFunction('getCss', function ($cssFile) {
             return sprintf('/css/%s', ltrim($cssFile, '/'));
         }));
+        $this->templateEngine->addFunction(new TwigFunction('getJs', function ($cssFile) {
+            return sprintf('/js/%s', ltrim($cssFile, '/'));
+        }));
         $this->templateEngine->addFunction(new TwigFunction('getScriptName', function () {
             return $_SERVER["SCRIPT_NAME"];
         }));
