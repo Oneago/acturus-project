@@ -25,11 +25,19 @@ class CreateView extends Command
         $output->writeln("<info>Creating {$input->getArgument('view name')}</info>");
         $output->writeln("<info>Wait a moment please...</info>");
         $output->writeln("");
-        $this->viewName = $input->getArgument('view name') . ".twig";
-        $this->controllerName = ucfirst($input->getArgument('view name')) . "Controller.php";
 
+        $this->viewName = $input->getArgument('view name') . ".twig";
+        $output->writeln("<info>Creating {$this->viewName}</info>");
         $this->createFile($this->viewName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/views/example.twig", "views");
+        $output->writeln("<info>{$this->viewName} Created!</info>");
+        $output->writeln("");
+
+        $this->controllerName = ucfirst($input->getArgument('view name')) . "Controller.php";
+        $output->writeln("<info>Creating {$this->controllerName}</info>");
         $this->createFile($this->controllerName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/controllers/ExampleController.php", "controllers");
+        $output->writeln("<info>{$this->controllerName} Created!</info>");
+        $output->writeln("");
+
         exec("git add .");
 
         $output->writeln("<info>{$input->getArgument('view name')} view has created!</info>");
