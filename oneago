@@ -15,6 +15,7 @@ $application = new Application();
 
 $application->add(new CreateView());
 $application->add(new RunPhpServer());
+$application->add(new GenerateProductionProject());
 
 /** @noinspection PhpUnhandledExceptionInspection */
 $application->run();

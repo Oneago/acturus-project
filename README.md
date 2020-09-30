@@ -24,7 +24,9 @@ Se ha dispuesto un software que facilita la preparación de la estructura básic
 "require-dev": {
   "symfony/console": "^5.1",
   "fzaninotto/faker": "^1.9",
-  "phpunit/phpunit": "^9.3"
+  "phpunit/phpunit": "^9.3",
+  "ext-zip": "*"
+  "ext-curl": "*"
 },
 ```
 
@@ -33,6 +35,11 @@ Se ha dispuesto un software que facilita la preparación de la estructura básic
 [Librerías requeridas modo desarrollo](https://www.notion.so/32c9b7aa106c4469bd66c43c4af426ad)
 
 El script se realizó para el uso de sistemas basados en Debian principalmente pero se ejecuta sin problemas en otras distribuciones
+
+## Prerequisitos
+- php 7.0 o superior
+- php-mysqli
+- php-zip
 
 ## Instalación e iniciación de un proyecto PHP
 
