@@ -45,7 +45,7 @@
       "@postInstall"
     ],
     "postInstall": [
-      "./post-init.sh"
+      "php postinit"
     ]
   }
 }

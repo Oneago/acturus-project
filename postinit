@@ -1,0 +1,44 @@
+#!/usr/bin/env php
+<?php
+
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+require __DIR__ . '/vendor/autoload.php';
+
+class DefaultCommand extends Command
+{
+    protected static $defaultName = 'postinit';
+
+    protected function configure()
+    {
+        $this->setDescription('Outputs "Hello World"');
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        @mkdir("db/migrations");
+        @mkdir("db/seeds");
+        if (!file_exists(".env")) {
+            copy(".env.example", ".env");
+        }
+        if (is_dir(".git")) {
+            exec("git add .");
+        }
+        exec("git add .");
+        return self::SUCCESS;
+    }
+}
+
+$command = new DefaultCommand();
+$application = new Application();
+
+$application->add($command);
+$application->setDefaultCommand($command->getName());
+
+/** @noinspection PhpUnhandledExceptionInspection */
+$application->run();
