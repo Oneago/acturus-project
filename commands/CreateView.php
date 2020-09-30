@@ -22,6 +22,9 @@ class CreateView extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $output->writeln("<info>Creating {$input->getArgument('view name')}</info>");
+        $output->writeln("<info>Wait a moment please...</info>");
+        $output->writeln("");
         $this->viewName = $input->getArgument('view name') . ".twig";
         $this->modelName = ucfirst($input->getArgument('view name')) . "Model.php";
 
