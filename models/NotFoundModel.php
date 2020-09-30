@@ -6,7 +6,7 @@ use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 
 /**
- * Class NotFoundModel
+ * Class NotFoundModel is a 404 page
  */
 class NotFoundModel extends TwigController
 {
