@@ -1,6 +1,8 @@
 <?php
 
 
+namespace App\Config;
+
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
 

@@ -1,6 +1,8 @@
 <?php
 
 
+namespace App\Config;
+
 class DotEnvConfig
 {
     private $dotenv;
