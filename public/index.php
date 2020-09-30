@@ -1,4 +1,8 @@
 <?php
+
+use App\Controllers\ExampleController;
+use App\Controllers\NotFoundController;
+
 require_once "../autoloader.php";
 
 

@@ -2,6 +2,9 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+use App\Commands\CreateView;
+use App\Commands\GenerateProductionProject;
+use App\Commands\RunPhpServer;
 use Symfony\Component\Console\Application;
 
 // Start autoload

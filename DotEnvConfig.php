@@ -3,6 +3,8 @@
 
 namespace App\Config;
 
+use Dotenv\Dotenv;
+
 class DotEnvConfig
 {
     private $dotenv;
@@ -13,7 +15,7 @@ class DotEnvConfig
     public function __construct()
     {
         // Start dotenv
-        $this->dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $this->dotenv = Dotenv::createImmutable(__DIR__);
         $this->dotenv->load();
     }
 

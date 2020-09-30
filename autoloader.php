@@ -1,6 +1,9 @@
 <?php
 // This is a custom autoloader for this template
 
+use App\Config\DotEnvConfig;
+use App\Config\WhoopsConfig;
+
 require_once "vendor/autoload.php";
 require_once "DotEnvConfig.php";
 
