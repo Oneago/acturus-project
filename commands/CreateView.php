@@ -29,7 +29,7 @@ class CreateView extends Command
         $this->modelName = ucfirst($input->getArgument('view name')) . "Model.php";
 
         $this->createFile($this->viewName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/views/example.twig", "views");
-        $this->createFile($this->modelName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/models/ExampleModel.php", "models");
+        $this->createFile($this->modelName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/controllers/ExampleController.php", "models");
         exec("git add .");
 
         $output->writeln("<info>{$input->getArgument('view name')} view has created!</info>");
@@ -48,7 +48,7 @@ class CreateView extends Command
         $contents = str_replace(
             [
                 "example.twig",
-                "ExampleModel",
+                "ExampleController",
                 " is a example class, you can delete or use as a model example for your app"
             ],
             [

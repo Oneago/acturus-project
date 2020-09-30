@@ -6,12 +6,13 @@ use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 
 /**
- * Class ExampleModel is a example class, you can delete or use as a model example for your app
+ * Class ExampleController is a example class, you can delete or use as a model example for your app
  */
-class ExampleModel extends TwigController {
+class ExampleController extends TwigController
+{
 
     /**
-     * ExampleModel constructor.
+     * ExampleController constructor.
      * @param string $title Page title
      * @param string $body Page body
      * @throws LoaderError

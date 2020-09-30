@@ -31,7 +31,7 @@
     "filp/whoops": "^2.7",
     "nette/robot-loader": "^3.3",
     "phpunit/phpunit": "^9.3",
-    "php": ">=7.0",
+    "php": ">=7.1",
     "ext-mysqli": "*",
     "ext-curl": "*",
     "ext-zip": "*"

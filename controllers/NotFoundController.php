@@ -6,13 +6,13 @@ use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 
 /**
- * Class NotFoundModel is a 404 page
+ * Class NotFoundController is a 404 page
  */
-class NotFoundModel extends TwigController
+class NotFoundController extends TwigController
 {
 
     /**
-     * NotFoundModel constructor.
+     * NotFoundController constructor.
      * @throws LoaderError
      * @throws RuntimeError
      * @throws SyntaxError

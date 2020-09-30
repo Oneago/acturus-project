@@ -23,6 +23,7 @@ class DefaultCommand extends Command
     {
         @mkdir("db/migrations");
         @mkdir("db/seeds");
+        @mkdir("models");
         if (!file_exists(".env")) {
             copy(".env.example", ".env");
         }
