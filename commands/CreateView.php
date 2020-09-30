@@ -10,7 +10,7 @@ class CreateView extends Command
 {
     protected static $defaultName = "make:view";
     private $viewName;
-    private $modelName;
+    private $controllerName;
 
     protected function configure()
     {
@@ -26,10 +26,10 @@ class CreateView extends Command
         $output->writeln("<info>Wait a moment please...</info>");
         $output->writeln("");
         $this->viewName = $input->getArgument('view name') . ".twig";
-        $this->modelName = ucfirst($input->getArgument('view name')) . "Model.php";
+        $this->controllerName = ucfirst($input->getArgument('view name')) . "Controller.php";
 
         $this->createFile($this->viewName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/views/example.twig", "views");
-        $this->createFile($this->modelName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/controllers/ExampleController.php", "models");
+        $this->createFile($this->controllerName, "https://raw.githubusercontent.com/Oneago/oneago-php-template/master/controllers/ExampleController.php", "controllers");
         exec("git add .");
 
         $output->writeln("<info>{$input->getArgument('view name')} view has created!</info>");
@@ -53,7 +53,7 @@ class CreateView extends Command
             ],
             [
                 $this->viewName,
-                str_replace(".php", "", $this->modelName),
+                str_replace(".php", "", $this->controllerName),
                 ""
             ], $data);
         fwrite($fp, $contents);
