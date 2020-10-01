@@ -22,6 +22,12 @@ class NotFoundController extends TwigController
     public function __construct()
     {
         parent::__construct();
-        echo $this->renderHTML("notFound.twig");
+        $this->render();
+    }
+
+    public function render()
+    {
+        /** @noinspection PhpUnhandledExceptionInspection */
+        echo self::renderHTML("notFound.twig");
     }
 }
