@@ -3,7 +3,8 @@
 
 namespace App\Controllers;
 
-use App\Config\MiddlewareInterface;
+use App\Bases\MiddlewareInterface;
+use App\Bases\TwigController;
 
 /**
  * Class ExampleController is a example class, you can delete or use as a model example for your app

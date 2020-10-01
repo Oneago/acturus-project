@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Controllers;
+namespace App\Bases;
 
 
 interface ViewInterface

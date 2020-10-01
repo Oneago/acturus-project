@@ -44,7 +44,8 @@
       "App\\Config\\": "config/",
       "App\\Controllers\\": "controllers/",
       "App\\Middlewares\\": "middlewares/",
-      "App\\Models\\": "models/"
+      "App\\Models\\": "models/",
+      "App\\Bases\\": "bases/"
     }
   },
   "autoload-dev": {

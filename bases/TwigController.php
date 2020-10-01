@@ -1,9 +1,8 @@
 <?php
 
 
-namespace App\Controllers;
+namespace App\Bases;
 
-use App\Config\Middleware;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
@@ -23,7 +22,7 @@ abstract class TwigController implements ViewInterface
 
     /**
      * TwigController constructor.
-     * @param array ...$middlewares
+     * @param array ...$middlewares pass MiddlewareInterface
      */
     public function __construct(array $middlewares = [])
     {
