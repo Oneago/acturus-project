@@ -65,9 +65,10 @@ abstract class TwigController implements ViewInterface
     protected function checkMiddlewares(): bool
     {
         foreach ($this->middlewares as $middleware) {
-            if (!$middleware->check())
+            if (!$middleware->check()) {
                 http_response_code(401);
                 return false;
+            }
         }
         return true;
     }
