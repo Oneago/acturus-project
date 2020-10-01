@@ -38,7 +38,7 @@ class SassMaker extends Command
         fwrite($fp, " * $date" . PHP_EOL);
         fwrite($fp, " */" . PHP_EOL);
         fclose($fp);
-        exec("git add .");
+        exec("git add public/css/$name");
 
         $output->writeln("<info>{$input->getArgument('name')} created!</info>");
         return Command::SUCCESS;

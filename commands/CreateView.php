@@ -40,8 +40,6 @@ class CreateView extends Command
         $output->writeln("<info>{$this->controllerName} Created!</info>");
         $output->writeln("");
 
-        exec("git add .");
-
         $output->writeln("<info>{$input->getArgument('view name')} view has created!</info>");
         return Command::SUCCESS;
     }
@@ -68,5 +66,6 @@ class CreateView extends Command
             ], $data);
         fwrite($fp, $contents);
         fclose($fp);
+        exec("git add $path/$name");
     }
 }

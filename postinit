@@ -28,8 +28,8 @@ class DefaultCommand extends Command
         if (!file_exists(".env")) {
             copy(".env.example", ".env");
         }
-        if (is_dir(".git")) {
-            exec("git add .");
+        if (!is_dir(".git")) {
+            exec("git init");
         }
         exec("git add .");
         return self::SUCCESS;
