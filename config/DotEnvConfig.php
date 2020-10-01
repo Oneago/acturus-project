@@ -15,7 +15,7 @@ class DotEnvConfig
     public function __construct()
     {
         // Start dotenv
-        $this->dotenv = Dotenv::createImmutable(__DIR__);
+        $this->dotenv = Dotenv::createImmutable(__DIR__ . "/..");
         $this->dotenv->load();
     }
 

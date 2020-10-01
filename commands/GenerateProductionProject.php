@@ -11,8 +11,6 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use ZipArchive;
 
-require_once "DotEnvConfig.php";
-
 class GenerateProductionProject extends Command
 {
     protected static $defaultName = "run:release";
