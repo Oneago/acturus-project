@@ -32,7 +32,7 @@ class SassCompiler extends Command
             return self::FAILURE;
         }
         $cssName = str_replace('.scss', '.css', $name);
-        exec("sass public/css/$name public/css/$cssName");
+        exec("sass --style=compressed public/css/$name public/css/$cssName");
         exec("git add public/css/$cssName");
         exec("git add public/css/$cssName.map");
         return self::SUCCESS;
