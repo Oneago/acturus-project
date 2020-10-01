@@ -2,6 +2,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+use App\Commands\CreateMiddleware;
 use App\Commands\CreateView;
 use App\Commands\GenerateProductionProject;
 use App\Commands\RunPhpServer;
@@ -9,16 +10,10 @@ use App\Commands\SassCompiler;
 use App\Commands\SassMaker;
 use Symfony\Component\Console\Application;
 
-// Start autoload
-$loader = new Nette\Loaders\RobotLoader;
-$loader->addDirectory(__DIR__ . "/commands");
-$loader->setTempDirectory(__DIR__ . "/temp");
-$loader->register(); // Run the RobotLoader
-
-
 $application = new Application();
 
 $application->add(new CreateView());
+$application->add(new CreateMiddleware());
 $application->add(new RunPhpServer());
 $application->add(new GenerateProductionProject());
 $application->add(new SassCompiler());
