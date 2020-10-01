@@ -31,7 +31,7 @@ class SassCompiler extends Command
             $output->writeln("<error>$name not is a valid file</error>");
             return self::FAILURE;
         }
-        $cssName = str_replace(".sass", ".css", $name);
+        $cssName = str_replace('.scss', '.css', $name);
         exec("sass public/css/$name public/css/$cssName");
         return self::SUCCESS;
     }
