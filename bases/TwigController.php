@@ -66,6 +66,7 @@ abstract class TwigController implements ViewInterface
     {
         foreach ($this->middlewares as $middleware) {
             if (!$middleware->check())
+                http_response_code(401);
                 return false;
         }
         return true;
