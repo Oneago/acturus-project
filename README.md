@@ -43,27 +43,9 @@ El script se realizó para el uso de sistemas basados en Debian principalmente p
 
 ## Instalación e iniciación de un proyecto PHP
 
-Ejecute el siguiente comando en la terminal (Le pedirá la contraseña de administrador) para instalar el script
+[Vease las instrucciones aquí](https://github.com/Oneago/installer/blob/main/README.md)
 
-### Linux
-
-```bash
-curl -s init.oneago.com/linux/ | bash
-```
-
-### Mac Os X
-
-```bash
-curl -s init.oneago.com/mac/ | bash
-```
-
-Una vez instalado, diríjase a la carpeta donde almacenará el proyecto desde la terminal y una vez esté en el ejecute lo siguiente:
-
-```bash
-oneago <nombre de proyecto>
-```
-
-nombre de proyecto es opcional, si no se pone esta variable el proyecto se llamará `oneago-php-template`
+nombre de proyecto es opcional, si no se pone el proyecto será creado en la carpeta actual
 
 [Estructura del proyecto creado](https://www.notion.so/f48490c8ca2848e8a2d83a6a436d61a6)
 
