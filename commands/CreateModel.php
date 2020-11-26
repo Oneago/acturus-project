@@ -33,7 +33,7 @@ class CreateModel extends Command
         $output->writeln("<info>{$this->modelName} Created!</info>");
         $output->writeln("");
 
-        $output->writeln("<info>{$input->getArgument('middleware name')} model has created!</info>");
+        $output->writeln("<info>{$input->getArgument('model name')} model has created!</info>");
         return Command::SUCCESS;
     }
 
