@@ -16,7 +16,7 @@ class SassMaker extends Command
     protected function configure()
     {
         $this
-            ->setDescription("Create an sass file")
+            ->setDescription("Create a sass file or component")
             ->addArgument("name", InputArgument::REQUIRED, "Name for sass file")
             ->addOption("component", "c", InputOption::VALUE_NONE, "sass component create")
             ->addOption("parent", "p", InputOption::VALUE_OPTIONAL, "sass parent to add import", "style.scss")
