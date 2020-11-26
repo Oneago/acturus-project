@@ -1,11 +1,9 @@
 <?php
 
-require_once "vendor/autoload.php";
-require_once "DotEnvConfig.php";
+use App\Config\DotEnvConfig;
 
 $dotenv = new DotEnvConfig();
 $dotenv->initConfigs();
-
 
 return
     [

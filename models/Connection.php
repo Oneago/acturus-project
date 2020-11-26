@@ -1,20 +1,32 @@
-<?php
+<?php /** @noinspection PhpMissingFieldTypeInspection */
 
 
 namespace App\Models;
 
 use mysqli;
 
-class Connection
+abstract class Connection implements ModelInterface
 {
+    /**
+     * @var string
+     */
+    protected $errorDetails;
+
     /**
      * @return mysqli database connection
      */
-    public static function init(): mysqli
+    protected static function init(): mysqli
     {
-        $con = mysqli_connect($_ENV["DB_HOST"], $_ENV["DB_USER"], $_ENV["DB_PASS"]) or die("Fail connecting to DB");
-        mysqli_select_db($con, $_ENV["DB_NAME"]) or die("Can't select DB");
+        $con = mysqli_connect($_ENV["DB_HOST"], $_ENV["DB_USER"], $_ENV["DB_PASS"], $_ENV["DB_NAME"], $_ENV["DB_PORT"] ?? 3306) or die("Fail connecting to DB");
         mysqli_set_charset($con, 'utf8');
         return $con;
+    }
+
+    /**
+     * @return string|null return error string. If error not exist return null
+     */
+    public function getErrorDetails(): ?string
+    {
+        return $this->errorDetails;
     }
 }

@@ -11,8 +11,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CreateView extends Command
 {
     protected static $defaultName = "make:view";
-    private $viewName;
-    private $controllerName;
+    private string $viewName;
+    private string $controllerName;
 
     protected function configure()
     {

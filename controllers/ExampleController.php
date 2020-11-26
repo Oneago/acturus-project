@@ -11,19 +11,16 @@ use App\Bases\TwigController;
  */
 class ExampleController extends TwigController
 {
-    private $title;
-    private $body;
+    private string $body;
 
     /**
      * ExampleController constructor.
-     * @param string $title Page title
      * @param string $body Page body
      * @param MiddlewareInterface ...$middlewares
      */
-    public function __construct(string $title, string $body, MiddlewareInterface...$middlewares)
+    public function __construct(string $body, MiddlewareInterface...$middlewares)
     {
         parent::__construct($middlewares);
-        $this->title = $title;
         $this->body = $body;
         $this->render();
     }
@@ -34,7 +31,6 @@ class ExampleController extends TwigController
         if ($status) {
             /** @noinspection PhpUnhandledExceptionInspection */
             echo self::renderHTML("example.twig", [
-                "title" => $this->title,
                 "body" => $this->body
             ]);
         } else {

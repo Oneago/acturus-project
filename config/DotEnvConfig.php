@@ -7,7 +7,8 @@ use Dotenv\Dotenv;
 
 class DotEnvConfig
 {
-    private $dotenv;
+    private Dotenv $dotenv;
+    private array $vars;
 
     /**
      * dotEnvConfig constructor.
@@ -16,7 +17,7 @@ class DotEnvConfig
     {
         // Start dotenv
         $this->dotenv = Dotenv::createImmutable(__DIR__ . "/..");
-        $this->dotenv->load();
+        $this->vars = $this->dotenv->load();
     }
 
     public function initConfigs()
@@ -35,7 +36,21 @@ class DotEnvConfig
             "DEBUG_DB_NAME",
             "DEBUG_DB_USER",
             "DEBUG_DB_PASS",
-            "DEBUG_DB_PORT"
+            "DEBUG_DB_PORT",
+            "DOCKER_DB_ADAPTER",
+            "DOCKER_DB_HOST",
+            "DOCKER_DB_NAME",
+            "DOCKER_DB_USER",
+            "DOCKER_DB_PASS",
+            "DOCKER_DB_PORT",
         ]);
+    }
+
+    /**
+     * @return array
+     */
+    public function getVars(): array
+    {
+        return $this->vars;
     }
 }

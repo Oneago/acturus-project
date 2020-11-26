@@ -3,10 +3,14 @@
 
 namespace App\Bases;
 
+use App\Config\TranslationConfig;
+use http\Env;
+use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
+use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
 use Twig\TwigFunction;
 
@@ -16,31 +20,56 @@ use Twig\TwigFunction;
  */
 abstract class TwigController implements ViewInterface
 {
-    protected $templateEngine;
-    private $templatesPath = "../views";
-    protected $middlewares;
+    protected Environment $templateEngine;
+    protected string $templatesPath = "../views";
+    protected array $middlewares;
 
     /**
      * TwigController constructor.
-     * @param array ...$middlewares pass MiddlewareInterface
+     * @param MiddlewareInterface[] $middlewares
      */
-    public function __construct(array $middlewares = [])
+    public function __construct(array $middlewares)
     {
         $this->middlewares = $middlewares;
 
         $loader = new FilesystemLoader($this->templatesPath);
         $this->templateEngine = new Environment($loader, [
             "debug" => $_ENV["DEBUG_MODE"],
-            "cache" => false
+            "cache" => !$_ENV["DEBUG_MODE"]
         ]);
+
+        if ($_ENV['DEBUG_MODE'])
+            $this->templateEngine->addExtension(new DebugExtension());
+
+        $this->templateEngine->addGlobal("getScriptName", $_SERVER["SCRIPT_NAME"]);
+        $this->templateEngine->addGlobal("getRequestUri", $_SERVER["REQUEST_URI"]);
+
         $this->templateEngine->addFunction(new TwigFunction('getCss', function ($cssFile) {
             return sprintf('/css/%s', ltrim($cssFile, '/'));
         }));
         $this->templateEngine->addFunction(new TwigFunction('getJs', function ($cssFile) {
             return sprintf('/js/%s', ltrim($cssFile, '/'));
         }));
-        $this->templateEngine->addFunction(new TwigFunction('getScriptName', function () {
-            return $_SERVER["SCRIPT_NAME"];
+        $this->templateEngine->addFunction(new TwigFunction('getAssets', function ($assetsFile) {
+            return sprintf('/assets/%s', ltrim($assetsFile, '/'));
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getServerVars', function () {
+            return $_SERVER;
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getGetVars', function () {
+            return $_GET;
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getPostVars', function () {
+            return $_POST;
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getCookieVars', function () {
+            return $_COOKIE;
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getSessionVars', function () {
+            return $_SESSION;
+        }));
+        $this->templateEngine->addFunction(new TwigFunction('getEnvVars', function () {
+            return $_ENV;
         }));
 
         $this->checkMiddlewares();
@@ -57,9 +86,7 @@ abstract class TwigController implements ViewInterface
      */
     protected function renderHTML(string $fileName, array $data = []): string
     {
-        return $this->templateEngine->render($fileName, array_merge($data, [
-            "scriptName" => $_SERVER["SCRIPT_NAME"]     // Passing php script name to twig
-        ]));
+        return $this->templateEngine->render($fileName, $data);
     }
 
     protected function checkMiddlewares(): bool

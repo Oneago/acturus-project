@@ -57,7 +57,7 @@ class GenerateProductionProject extends Command
         $dir = opendir($src);
         @mkdir($dst);
 
-        $excluded = ["composer.lock", "temp", "LICENSE", "oneago", ".gitignore", "commands", ".git", "out", "vendor", ".idea", "postinit", ".DS_Store"];
+        $excluded = ["Dockerfile", "docker-compose.yml", "composer.lock", "temp", "LICENSE", "ada", ".gitignore", "commands", ".git", "out", "vendor", ".idea", "postinit", ".DS_Store", "Dockerfile", "docker-compose.yml"];
         while (false !== ($file = readdir($dir))) {
             if (!in_array($file, $excluded)) {
                 if (($file != '.') && ($file != '..')) {

@@ -17,7 +17,7 @@ class SassCompiler extends Command
         $this
             ->setDescription("Compile a sass file")
             ->addArgument("name", InputArgument::REQUIRED, "Name for sass file")
-            ->setHelp("This command compile a sass file in public/css");
+            ->setHelp("This command compile a sass file in www/css");
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -25,16 +25,16 @@ class SassCompiler extends Command
         $name = $input->getArgument('name');
         $name .= str_contains($name, ".scss") ? "" : ".scss";
 
-        $output->writeln("<info>Compiling sass file in public/css/$name</info>");
+        $output->writeln("<info>Compiling sass file in www/css/$name</info>");
 
-        if (!is_file("public/css/$name")) {
+        if (!is_file("www/css/$name")) {
             $output->writeln("<error>$name not is a valid file</error>");
             return self::FAILURE;
         }
         $cssName = str_replace('.scss', '.css', $name);
-        exec("sass --style=compressed public/css/$name public/css/$cssName");
-        exec("git add public/css/$cssName");
-        exec("git add public/css/$cssName.map");
+        exec("sass --style=compressed www/css/$name www/css/$cssName");
+        exec("git add www/css/$cssName");
+        exec("git add www/css/$cssName.map");
         return self::SUCCESS;
     }
 }

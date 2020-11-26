@@ -11,7 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CreateMiddleware extends Command
 {
     protected static $defaultName = "make:middleware";
-    private $middlewareName;
+    private string $middlewareName;
 
     protected function configure()
     {
@@ -33,7 +33,7 @@ class CreateMiddleware extends Command
         $output->writeln("<info>{$this->middlewareName} Created!</info>");
         $output->writeln("");
 
-        $output->writeln("<info>{$input->getArgument('middleware name')} view has created!</info>");
+        $output->writeln("<info>{$input->getArgument('middleware name')} middleware has created!</info>");
         return Command::SUCCESS;
     }
 

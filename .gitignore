@@ -4,15 +4,24 @@ composer.phar
 /temp/
 
 ### IntelliJ project files
-.idea
 *.iml
-gen
-!/.idea/workspace.xml
-!/.idea/php.xml
-!/.idea/misc.xml
-!/.idea/modules.xml
-!/.idea/codestream.xml
-!/.idea/l.iml
+/.idea/workspace.xml
+/.idea/php.xml
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/codestream.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/shelf/
+/.idea/dataSources.local.xml
+/.idea/dataSources/
+/.idea/httpRequests/
+/.idea/php-test-framework.xml
+/.idea/jsLibraryMappings.xml
+/.idea/ClusterSabana.iml
+
+### Sass
+/.sass-cache/
 
 ### .env
 .env
@@ -20,3 +29,6 @@ gen
 ### oneago cli generated files
 out
 release
+
+.DS_Store
+/html/

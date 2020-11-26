@@ -9,7 +9,7 @@ require_once "vendor/autoload.php";
 $dotenv = new DotEnvConfig();
 
 if ($_ENV["DEBUG_MODE"] ?? true) {
-    new WhoopsConfig();
+    new WhoopsConfig($dotenv->getVars());
 }
 $dotenv->initConfigs();
 
