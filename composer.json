@@ -2,13 +2,7 @@
   "name": "oneago/oneago-php-template",
   "description": "Basic structure for php projects used by Oneago",
   "type": "project",
-  "keywords": [
-    "oneago",
-    "php",
-    "basic",
-    "template",
-    "project"
-  ],
+  "keywords": ["oneago", "php", "basic", "template", "project", "sass", "docker", "framework"],
   "license": "GPL-3.0-only",
   "authors": [
     {
@@ -26,15 +20,16 @@
   ],
   "require": {
     "twig/twig": "^3.1",
+    "symfony/twig-bridge": "^5.1",
     "robmorgan/phinx": "^0.12.4",
     "vlucas/phpdotenv": "^5.2",
+    "oneago/ada-console": "^1.0",
     "php": ">=7.4",
     "ext-mysqli": "*",
-    "ext-curl": "*",
     "ext-zip": "*"
   },
   "require-dev": {
-    "fakerphp/faker" : "^1.12.0",
+    "fakerphp/faker": "^1.12.0",
     "filp/whoops": "^2.9",
     "phpunit/phpunit": "^9.4",
     "symfony/console": "^5.1"

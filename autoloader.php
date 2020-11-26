@@ -4,14 +4,11 @@
 use App\Config\DotEnvConfig;
 use App\Config\WhoopsConfig;
 
-require_once "vendor/autoload.php";
+require_once __DIR__ . "/vendor/autoload.php";
 
 $dotenv = new DotEnvConfig();
-
-if ($_ENV["DEBUG_MODE"] ?? true) {
-    new WhoopsConfig($dotenv->getVars());
-}
 $dotenv->initConfigs();
+new WhoopsConfig($dotenv->getVars());
 
 // Start DB Vars
 $_ENV["DB_HOST"] = $_ENV["DEBUG_MODE"] ? $_ENV["DEBUG_DB_HOST"] : $_ENV["PRODUCTION_DB_HOST"];
