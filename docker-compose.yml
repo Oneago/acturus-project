@@ -4,7 +4,6 @@ services:
   webserver:
     build:
       context: .
-    restart: 'always'
     ports:
       - "8080:80"
       - "4430:443"
@@ -17,7 +16,6 @@ services:
       PMA_PORT: 8081
   database:
     image: mysql:latest
-    restart: 'always'
     ports:
       - "127.0.0.1:9906:3306"
     environment:
