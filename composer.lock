@@ -275,16 +275,16 @@
         },
         {
             "name": "oneago/ada-console",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oneago/ada-console.git",
-                "reference": "98d3ba96ef3253047ae7cbcc0f23ff08299946b1"
+                "reference": "5bd716dab3110b5ca2743ee87083dd2c062cbd95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oneago/ada-console/zipball/98d3ba96ef3253047ae7cbcc0f23ff08299946b1",
-                "reference": "98d3ba96ef3253047ae7cbcc0f23ff08299946b1",
+                "url": "https://api.github.com/repos/Oneago/ada-console/zipball/5bd716dab3110b5ca2743ee87083dd2c062cbd95",
+                "reference": "5bd716dab3110b5ca2743ee87083dd2c062cbd95",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +321,7 @@
                 }
             ],
             "description": "Console for oneago/oneago-php-template",
-            "time": "2020-11-26T21:59:35+00:00"
+            "time": "2020-12-28T21:41:05+00:00"
         },
         {
             "name": "phpoption/phpoption",
