@@ -32,3 +32,4 @@ release
 
 .DS_Store
 /html/
+.phpunit.result.cache
