@@ -2,7 +2,7 @@
   "name": "oneago/oneago-php-template",
   "description": "Basic structure for php projects used by Oneago",
   "type": "library",
-  "keywords": ["oneago", "php", "basic", "template", "project", "sass", "docker", "framework"],
+  "keywords": ["oneago", "php", "basic", "template", "project", "sass", "docker", "framework", "sass"],
   "license": "GPL-3.0-only",
   "authors": [
     {

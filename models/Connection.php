@@ -5,7 +5,7 @@ namespace App\Models;
 
 use mysqli;
 
-abstract class Connection implements ModelInterface
+abstract class Connection
 {
     /**
      * @var string
@@ -29,4 +29,11 @@ abstract class Connection implements ModelInterface
     {
         return $this->errorDetails;
     }
+
+    public abstract function get(int $id): ?object;
+    public abstract function create(object $model): bool;
+
+    public abstract function list(string $search = null): array;
+
+    public abstract function update(object $model): bool;
 }
