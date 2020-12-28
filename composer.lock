@@ -275,47 +275,36 @@
         },
         {
             "name": "oneago/ada-console",
-            "version": "v1.0.4",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oneago/ada-console.git",
-                "reference": "27fc108a853f23c0fe76145ae7a3ccdf963f45fe"
+                "reference": "98d3ba96ef3253047ae7cbcc0f23ff08299946b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oneago/ada-console/zipball/27fc108a853f23c0fe76145ae7a3ccdf963f45fe",
-                "reference": "27fc108a853f23c0fe76145ae7a3ccdf963f45fe",
+                "url": "https://api.github.com/repos/Oneago/ada-console/zipball/98d3ba96ef3253047ae7cbcc0f23ff08299946b1",
+                "reference": "98d3ba96ef3253047ae7cbcc0f23ff08299946b1",
                 "shasum": ""
             },
             "require": {
-                "ext-mysqli": "*",
-                "ext-zip": "*",
-                "oneago/ada-console": "^1.0",
                 "php": ">=7.4",
-                "robmorgan/phinx": "^0.12.4",
-                "symfony/twig-bridge": "^5.1",
-                "twig/twig": "^3.1",
-                "vlucas/phpdotenv": "^5.2"
+                "symfony/console": "^5.1",
+                "twig/twig": "^3.1"
             },
-            "require-dev": {
-                "fakerphp/faker": "^1.12.0",
-                "filp/whoops": "^2.9",
-                "phpunit/phpunit": "^9.4",
-                "symfony/console": "^5.1"
-            },
+            "bin": [
+                "bin/ada"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "App\\Config\\": "config/",
-                    "App\\Controllers\\": "controllers/",
-                    "App\\Middlewares\\": "middlewares/",
-                    "App\\Models\\": "models/",
-                    "App\\Bases\\": "bases/"
+                    "Oneago\\AdaConsole\\Commands\\": "src/",
+                    "Oneago\\AdaConsole\\Bases\\": "bases/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0-only"
+                "MIT"
             ],
             "authors": [
                 {
@@ -331,18 +320,8 @@
                     "role": "Maintainer"
                 }
             ],
-            "description": "Basic structure for php projects used by Oneago",
-            "keywords": [
-                "basic",
-                "docker",
-                "framework",
-                "oneago",
-                "php",
-                "project",
-                "sass",
-                "template"
-            ],
-            "time": "2020-12-12T22:30:07+00:00"
+            "description": "Console for oneago/oneago-php-template",
+            "time": "2020-11-26T21:59:35+00:00"
         },
         {
             "name": "phpoption/phpoption",
