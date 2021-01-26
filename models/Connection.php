@@ -33,7 +33,7 @@ abstract class Connection
     public abstract function get(int $id): ?object;
     public abstract function create(object $model): bool;
 
-    public abstract function list(string $search = null): array;
+    public abstract function list(string $search = null): ?array;
 
     public abstract function update(object $model): bool;
 }
