@@ -1,6 +1,6 @@
 {
-  "name": "oneago/acturus-proyect",
-  "description": "Acturus proyect is an Oneago open source proyect for easy and quick php proyects",
+  "name": "oneago/arcturus-project",
+  "description": "Arcturus project is an Oneago open source project for easy and quick php projects",
   "type": "library",
   "keywords": ["oneago", "php", "basic", "template", "project", "sass", "docker", "framework", "sass"],
   "license": "GPL-3.0-only",
@@ -19,19 +19,19 @@
     }
   ],
   "require": {
-    "twig/twig": "^3.1",
-    "symfony/twig-bridge": "^5.1",
-    "robmorgan/phinx": "^0.12.4",
-    "vlucas/phpdotenv": "^5.2",
-    "oneago/ada-console": "^1.0",
     "php": ">=7.4",
     "ext-mysqli": "*",
-    "ext-zip": "*"
+    "ext-zip": "*",
+    "twig/twig": "^3.3",
+    "symfony/twig-bridge": "^5.2",
+    "robmorgan/phinx": "^0.12.5",
+    "vlucas/phpdotenv": "^5.3",
+    "oneago/ada-console": "^1.0"
   },
   "require-dev": {
     "filp/whoops": "^2.9",
-    "phpunit/phpunit": "^9.4",
-    "symfony/console": "^5.1",
+    "phpunit/phpunit": "^9.5",
+    "symfony/console": "^5.2",
     "fakerphp/faker": "^1.13"
   },
   "autoload": {
