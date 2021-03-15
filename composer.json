@@ -1,6 +1,6 @@
 {
-  "name": "oneago/oneago-php-template",
-  "description": "Basic structure for php projects used by Oneago",
+  "name": "oneago/acturus-proyect",
+  "description": "Acturus proyect is an Oneago open source proyect for easy and quick php proyects",
   "type": "library",
   "keywords": ["oneago", "php", "basic", "template", "project", "sass", "docker", "framework", "sass"],
   "license": "GPL-3.0-only",
