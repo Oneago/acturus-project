@@ -1,8 +1,8 @@
 {
   "name": "oneago/arcturus-project",
   "description": "Arcturus project is an Oneago open source project for easy and quick php projects",
-  "type": "library",
-  "keywords": ["oneago", "php", "basic", "template", "project", "sass", "docker", "framework", "sass"],
+  "type": "project",
+  "keywords": ["arcturus", "oneago", "php", "basic", "template", "project", "sass", "docker", "framework", "sass", "angular", "typescript"],
   "license": "GPL-3.0-only",
   "authors": [
     {
