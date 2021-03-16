@@ -5,20 +5,7 @@ composer.phar
 
 ### IntelliJ project files
 *.iml
-/.idea/workspace.xml
-/.idea/php.xml
-/.idea/vcs.xml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/codestream.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/shelf/
-/.idea/dataSources.local.xml
-/.idea/dataSources/
-/.idea/httpRequests/
-/.idea/php-test-framework.xml
-/.idea/jsLibraryMappings.xml
-/.idea/ClusterSabana.iml
+/.idea/*
 
 ### Sass
 /.sass-cache/

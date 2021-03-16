@@ -31,6 +31,10 @@ abstract class TwigController extends BaseTwigController
         $this->templateEngine->addFunction(new TwigFunction('getCss', function ($cssFile) {
             return sprintf('/css/%s', ltrim($cssFile, '/'));                                                        // Add function
         }));
+
+        $this->templateEngine->addFilter(new TwigFilter('tester', function(string $param) {                         // Add filter
+            return $param;
+        }));
         */
     }
 }

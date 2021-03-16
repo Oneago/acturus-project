@@ -26,6 +26,7 @@ class DotEnvConfig
         $this->dotenv->required(["EDITOR_COMMAND"])->allowedValues(["sublime", "textmate", "emacs", "macvim", "phpstorm", "idea", "vscode", "atom", "espresso"])->notEmpty();
         $this->dotenv->required([
             "PRODUCTION_DB_ADAPTER",
+            "APP_NAME",
             "PRODUCTION_DB_HOST",
             "PRODUCTION_DB_NAME",
             "PRODUCTION_DB_USER",

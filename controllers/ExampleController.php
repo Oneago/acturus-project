@@ -35,6 +35,7 @@ class ExampleController extends TwigController
                 "body" => $this->body
             ]);
         } else {
+            // header("location: /{$_SESSION['lang']}/login?redirect={$_SERVER['REDIRECT_URL']}");      // Example
             echo "No correct passing middleware";
         }
     }
