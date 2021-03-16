@@ -4,7 +4,7 @@ composer.phar
 /temp/
 
 ### npm files
-*/node_modules/
+node_modules
 
 ### IntelliJ project files
 *.iml
@@ -19,6 +19,9 @@ composer.phar
 ### oneago cli generated files
 out
 release
+
+### TypeScript output
+/www/js/*.js
 
 .DS_Store
 /html/

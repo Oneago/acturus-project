@@ -10,7 +10,7 @@ require_once "../autoloader.php";
 //Router
 switch ($_SERVER["REQUEST_URI"]) {
     case "/";
-        new ExampleController("Example page for basic php Oneago project", new ExampleMiddleware());
+        new ExampleController(new ExampleMiddleware());
         break;
 
     default:

@@ -4,7 +4,6 @@
 
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -32,6 +31,8 @@ class DefaultCommand extends Command
             exec("git init");
         }
         exec("git add .");
+        exec("npm install");
+        exec("./ada tcs:compile");
         return self::SUCCESS;
     }
 }

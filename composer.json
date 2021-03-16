@@ -24,12 +24,12 @@
     "ext-zip": "*",
     "twig/twig": "^3.3",
     "symfony/twig-bridge": "^5.2",
-    "robmorgan/phinx": "^0.12.5",
-    "vlucas/phpdotenv": "^5.3",
-    "oneago/ada-console": "^1.0"
+    "robmorgan/phinx": "^0.12.6",
+    "vlucas/phpdotenv": "^5.3"
   },
   "require-dev": {
-    "filp/whoops": "^2.9",
+    "oneago/ada-console": "^2.0",
+    "filp/whoops": "^2.10",
     "phpunit/phpunit": "^9.5",
     "symfony/console": "^5.2",
     "fakerphp/faker": "^1.13"

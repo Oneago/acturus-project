@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // "incremental": true,                         /* Enable incremental compilation */
+    "target": "ESNext",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "outDir": "./www/js",
+    "downlevelIteration": false,                    /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // "paths": {},                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
+    "esModuleInterop": true,
+
+    /* Source Map Options */
+    "inlineSources": true,
+  }
+}
