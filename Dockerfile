@@ -31,33 +31,32 @@ openssl && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install xdebug
-RUN pecl install xdebug-2.8.0 && \
+RUN pecl install xdebug && \
     docker-php-ext-enable xdebug
 
 # Install redis
-RUN pecl install redis-5.1.1 && \
+RUN pecl install redis && \
     docker-php-ext-enable redis
 
 # Install imagick
-RUN apt-get update && \
-    apt-get -y --no-install-recommends install --fix-missing libmagickwand-dev && \
-    rm -rf /var/lib/apt/lists/* && \
-    pecl install imagick && \
-    docker-php-ext-enable imagick
+#RUN apt-get update && \
+#    apt-get -y --no-install-recommends install --fix-missing libmagickwand-dev && \
+#    rm -rf /var/lib/apt/lists/* && \
+#    pecl install imagick && \
+#    docker-php-ext-enable imagick
 
-# Other PHP7 Extensions
+# Other PHP8 Extensions
 
-RUN docker-php-ext-install pdo_mysql && \
-    docker-php-ext-install pdo_sqlite && \
-    docker-php-ext-install mysqli && \
-    docker-php-ext-install curl && \
-    docker-php-ext-install tokenizer && \
-    docker-php-ext-install json && \
-    docker-php-ext-install zip && \
-    docker-php-ext-install -j$(nproc) intl && \
-    docker-php-ext-install mbstring && \
-    docker-php-ext-install gettext && \
-    docker-php-ext-install exif
+RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install pdo_sqlite
+RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install curl
+RUN docker-php-ext-install tokenizer
+RUN docker-php-ext-install zip
+RUN docker-php-ext-install intl
+RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install gettext
+RUN docker-php-ext-install exif
 
 
 # Install Freetype

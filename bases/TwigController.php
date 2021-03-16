@@ -5,15 +5,20 @@ namespace App\Bases;
 
 
 use Oneago\AdaConsole\Bases\BaseTwigController;
+use Oneago\AdaConsole\Bases\MiddlewareInterface;
 
 /**
  * Class TwigController is a basic twig loader
  */
 abstract class TwigController extends BaseTwigController
 {
-    public function __construct(array $middlewares = [])
+    /**
+     * TwigController constructor.
+     * @param MiddlewareInterface ...$middlewares
+     */
+    public function __construct(MiddlewareInterface ...$middlewares)
     {
-        parent::__construct($middlewares);
+        parent::__construct(...$middlewares);
         $this->twigAdditions();
     }
 
