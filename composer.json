@@ -20,7 +20,7 @@
   ],
   "require": {
     "php": ">=7.4",
-    "ext-mysqli": "*",
+    "ext-pdo": "*",
     "ext-zip": "*",
     "twig/twig": "^3.3",
     "symfony/twig-bridge": "^5.2",
