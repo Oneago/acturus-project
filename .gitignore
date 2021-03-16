@@ -3,12 +3,15 @@ composer.phar
 /vendor/
 /temp/
 
+### npm files
+*/node_modules/
+
 ### IntelliJ project files
 *.iml
-/.idea/*
+/.idea/
 
 ### Sass
-/.sass-cache/
+*/.sass-cache/
 
 ### .env
 .env
