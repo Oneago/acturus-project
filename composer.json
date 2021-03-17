@@ -19,16 +19,18 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0",
     "ext-pdo": "*",
     "ext-zip": "*",
     "twig/twig": "^3.3",
     "symfony/twig-bridge": "^5.2",
     "robmorgan/phinx": "^0.12.6",
-    "vlucas/phpdotenv": "^5.3"
+    "vlucas/phpdotenv": "^5.3",
+    "slim/slim": "^4.7",
+    "slim/psr7": "^1.3"
   },
   "require-dev": {
-    "oneago/ada-console": "^2.0",
+    "oneago/ada-console": "dev-master",
     "filp/whoops": "^2.10",
     "phpunit/phpunit": "^9.5",
     "symfony/console": "^5.2",
