@@ -50,8 +50,6 @@ class HttpErrorController extends TwigController implements ErrorRendererInterfa
     {
         $this->code = $exception->getCode();
         $this->message = $exception->getMessage();
-        $this->title = $exception->getTitle();
-        $this->description = $exception->getDescription();
         return $this->render();
     }
 }

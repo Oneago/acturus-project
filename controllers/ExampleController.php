@@ -27,7 +27,7 @@ class ExampleController extends TwigController
         $status = self::checkMiddlewares();
         if ($status) {
             /** @noinspection PhpUnhandledExceptionInspection */
-            echo self::renderHTML("welcome.twig", [
+            echo self::renderHTML("Welcome.twig", [
                 "body" => "Example page for basic php Oneago project"
             ]);
         } else {
