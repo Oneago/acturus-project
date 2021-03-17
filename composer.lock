@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98de7a9cd4169ffdfe0b240aed4da4ad",
+    "content-hash": "6a866a3c1051ab783fa545a86f24804f",
     "packages": [
         {
             "name": "cakephp/core",
@@ -406,6 +406,61 @@
                 "source": "https://github.com/nikic/FastRoute/tree/master"
             },
             "time": "2018-02-13T20:26:39+00:00"
+        },
+        {
+            "name": "oneago/ada-console",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Oneago/ada-console.git",
+                "reference": "2efadcf6f6349166b08cb5c159f4519355163bdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Oneago/ada-console/zipball/2efadcf6f6349166b08cb5c159f4519355163bdf",
+                "reference": "2efadcf6f6349166b08cb5c159f4519355163bdf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zip": "*",
+                "php": ">=7.4",
+                "symfony/console": "^5.2",
+                "twig/twig": "^3.3"
+            },
+            "bin": [
+                "bin/ada"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Oneago\\AdaConsole\\Commands\\": "src/",
+                    "Oneago\\AdaConsole\\Bases\\": "bases/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jruedaq",
+                    "email": "jrueda@oneago.com",
+                    "homepage": "https://www.juandavid.dev",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Oneago",
+                    "email": "support@oneago.com",
+                    "homepage": "https://www.oneago.com/",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Console for oneago/oneago-php-template",
+            "support": {
+                "issues": "https://github.com/Oneago/ada-console/issues",
+                "source": "https://github.com/Oneago/ada-console/tree/v2.0.0"
+            },
+            "time": "2021-03-16T22:40:34+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -2787,62 +2842,6 @@
             "time": "2020-12-20T10:01:03+00:00"
         },
         {
-            "name": "oneago/ada-console",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Oneago/ada-console.git",
-                "reference": "2efadcf6f6349166b08cb5c159f4519355163bdf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Oneago/ada-console/zipball/2efadcf6f6349166b08cb5c159f4519355163bdf",
-                "reference": "2efadcf6f6349166b08cb5c159f4519355163bdf",
-                "shasum": ""
-            },
-            "require": {
-                "ext-zip": "*",
-                "php": ">=7.4",
-                "symfony/console": "^5.2",
-                "twig/twig": "^3.3"
-            },
-            "default-branch": true,
-            "bin": [
-                "bin/ada"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Oneago\\AdaConsole\\Commands\\": "src/",
-                    "Oneago\\AdaConsole\\Bases\\": "bases/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "jruedaq",
-                    "email": "jrueda@oneago.com",
-                    "homepage": "https://www.juandavid.dev",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Oneago",
-                    "email": "support@oneago.com",
-                    "homepage": "https://www.oneago.com/",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Console for oneago/oneago-php-template",
-            "support": {
-                "issues": "https://github.com/Oneago/ada-console/issues",
-                "source": "https://github.com/Oneago/ada-console/tree/v2.0.0"
-            },
-            "time": "2021-03-16T22:40:34+00:00"
-        },
-        {
             "name": "phar-io/manifest",
             "version": "2.0.1",
             "source": {
@@ -4674,9 +4673,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "oneago/ada-console": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

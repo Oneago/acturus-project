@@ -28,6 +28,17 @@ See this project in [packagist.org](https://packagist.org/packages/oneago/arctur
 
 - After install Arcturus CLI installer run in command line `arcturus <project name>` inside installation project
 
+### Libraries
+
+Arcturus implements 4 libraries that need previous documentation for the best benefit
+
+|  Library    | Description | Documentation |
+|-------------|-------------|---------------|
+| Twig        | Template engine for PHP with `.twig` extension inspired in Django templates with XSS attack protection | [twig 3.x docs](https://twig.symfony.com/doc/3.x/)
+| Phinx       | DPhinx makes it ridiculously easy to manage the database migrations for your PHP app. Phinx is just about migrations without all the bloat of a database ORM system or framework. | [Phinx 0.12 docs](https://book.cakephp.org/phinx/0/en/index.html)
+| Slim router | The Slim Framework’s router is built on top of the Fast Route component, and it is remarkably fast and stable. While we are using this component to do all our routing, the app’s core has been entirely decoupled from it and interfaces have been put in place to pave the way for using other routing libraries. | [Slim v4 docs](https://www.slimframework.com/docs/v4/)
+| phpunit     | PHPUnit is a programmer-oriented testing framework for PHP. It is an instance of the xUnit architecture for unit testing frameworks. | [PHPUnit docs](https://phpunit.de/documentation.html)
+
 ## Ada CLI available commands
 
 in project folder run `./ada` or `php ada` for script help
@@ -120,11 +131,11 @@ Manage sass files. require sass installed in your system
 
   ### Arguments
     - **name**: Name for a new sass file. If name no have extension, the .sass extension is added automatically
-  
+
   ### Options
     - `--component` (`-c`): If option is set, create a component y components directory otherwise create in css
       directory
-    - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"] 
+    - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"]
 
 ### tsc
 
