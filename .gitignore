@@ -21,7 +21,7 @@ out
 release
 
 ### TypeScript output
-/www/js/*.js
+/public_html/js/*.js
 
 .DS_Store
 /html/

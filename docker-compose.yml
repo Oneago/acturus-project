@@ -10,7 +10,7 @@ services:
     links:
       - database
     volumes:
-      - ./www:/var/www/html
+      - ./public_html:/var/www/html
       - ./:/var/www
     environment:
       PMA_PORT: 8081

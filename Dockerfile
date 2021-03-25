@@ -38,13 +38,6 @@ RUN pecl install xdebug && \
 RUN pecl install redis && \
     docker-php-ext-enable redis
 
-# Install imagick
-#RUN apt-get update && \
-#    apt-get -y --no-install-recommends install --fix-missing libmagickwand-dev && \
-#    rm -rf /var/lib/apt/lists/* && \
-#    pecl install imagick && \
-#    docker-php-ext-enable imagick
-
 # Other PHP8 Extensions
 
 RUN docker-php-ext-install pdo_mysql

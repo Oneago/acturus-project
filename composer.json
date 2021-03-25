@@ -31,6 +31,7 @@
     "oneago/ada-console": "^2.0"
   },
   "require-dev": {
+    "roave/security-advisories": "dev-latest",
     "filp/whoops": "^2.10",
     "phpunit/phpunit": "^9.5",
     "symfony/console": "^5.2",

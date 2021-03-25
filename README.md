@@ -117,7 +117,7 @@ Create new project files
 Manage sass files. require sass installed in your system
 
 - ### sass:compile
-  Compile a sass file in www/css
+  Compile a sass file in public_html/css
 
         php ada sass:compile <name> 
 
@@ -125,14 +125,14 @@ Manage sass files. require sass installed in your system
     - **name**: Name for sass file. If name no have extension, the .sass extension is added automatically
 
 - ### sass:new
-  Compile a sass file in www/css
+  Compile a sass file in public_html/css
 
         php ada sass:new [options] [--] <name>
 
   ### Arguments
     - **name**: Name for a new sass file. If name no have extension, the .sass extension is added automatically
 
-  ### Options
+    ### Options
     - `--component` (`-c`): If option is set, create a component y components directory otherwise create in css
       directory
     - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"]
@@ -142,6 +142,6 @@ Manage sass files. require sass installed in your system
 Manage Typescript files. require npm installed in your system
 
 - ### tsc:compile
-  Compile all ts files in www/js directory
+  Compile all ts files in public_html/js directory
 
         php ada tsc:compile
