@@ -20,10 +20,18 @@ class DefaultCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        @mkdir("db");
-        @mkdir("db/migrations");
-        @mkdir("db/seeds");
-        @mkdir("models");
+        if (!mkdir("db") && !is_dir("db")) {
+            throw new RuntimeException(sprintf('Directory "%s" was not created', "db"));
+        }
+        if (!mkdir("db/migrations") && !is_dir("db/migrations")) {
+            throw new RuntimeException(sprintf('Directory "%s" was not created', "db/migrations"));
+        }
+        if (!mkdir("db/seeds") && !is_dir("db/seeds")) {
+            throw new RuntimeException(sprintf('Directory "%s" was not created', "db/seeds"));
+        }
+        if (!mkdir("models") && !is_dir("models")) {
+            throw new RuntimeException(sprintf('Directory "%s" was not created', "models"));
+        }
         if (!file_exists(".env")) {
             copy(".env.example", ".env");
         }

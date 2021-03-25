@@ -24,10 +24,10 @@ class ExampleController extends TwigController
 
     public function render()
     {
-        $status = self::checkMiddlewares();
+        $status = $this->checkMiddlewares();
         if ($status) {
             /** @noinspection PhpUnhandledExceptionInspection */
-            echo self::renderHTML("Welcome.twig", [
+            echo $this->renderHTML("Welcome.twig", [
                 "body" => "Example page for basic php Oneago project"
             ]);
         } else {

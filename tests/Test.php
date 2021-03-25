@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Commands;
+namespace App\Tests;
 
-use App\Controllers\ExampleController;
 use PHPUnit\Framework\TestCase;
 
 class Test extends TestCase
 {
-    public function test() {
+    public function test()
+    {
         self::assertTrue(true); // Example
     }
 }

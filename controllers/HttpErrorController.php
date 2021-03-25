@@ -4,12 +4,8 @@
 namespace App\Controllers;
 
 use App\Bases\TwigController;
-use Oneago\AdaConsole\Bases\MiddlewareInterface;
 use Slim\Interfaces\ErrorRendererInterface;
 use Throwable;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
 
 /**
  * Class HttpErrorController is a 404 page
@@ -38,7 +34,7 @@ class HttpErrorController extends TwigController implements ErrorRendererInterfa
     {
         http_response_code($this->code ?? 200);
         /** @noinspection PhpUnhandledExceptionInspection */
-        return self::renderHTML("HttpError.twig", [
+        return $this->renderHTML("HttpError.twig", [
             "code" => $this->code,
             "message" => $this->message,
             "title" => $this->title,
