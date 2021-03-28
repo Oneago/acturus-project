@@ -15,7 +15,8 @@ class WelcomeController
     public function index($view): ViewResponse
     {
         return template($view, [
-            "body" => "Example page for basic php Oneago project"
+            "body" => "Example page for basic php Oneago project",
+            "title" => "Welcome!!"
         ]);
     }
 }

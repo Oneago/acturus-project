@@ -1,78 +1,27 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        #forkongithub a {
-            background: #ff9933;
-            color: #fff;
-            text-decoration: none;
-            font-family: arial, sans-serif;
-            text-align: center;
-            font-weight: bold;
-            padding: 5px 40px;
-            font-size: 1rem;
-            line-height: 2rem;
-            position: relative;
-            transition: 0.5s;
-        }
+{% extends "Template.twig" %}
 
-        #forkongithub a:hover {
-            background: #ff8814;
-            color: #fff;
-        }
+{% block content %}
 
-        #forkongithub a::before, #forkongithub a::after {
-            content: "";
-            width: 100%;
-            display: block;
-            position: absolute;
-            top: 1px;
-            left: 0;
-            height: 1px;
-            background: #fff;
-        }
+    <div class="mainContainer">
+        <figure class="main__logo">
+            <img src="https://i.imgur.com/lKtlQBW.png" loading="lazy" alt="Arcturus Logo" class="main__logo--img">
+        </figure>
 
-        #forkongithub a::after {
-            bottom: 1px;
-            top: auto;
-        }
+        <div class="main__description">
+            <p class="main__description--text">Create projects in PHP using MVC Architecture. For templates using Twig, Sass preprocessor style and possibility of use JS or TS.
+                <br> For all functions type in your terminal: php ada --help </p>
+            <p class="main__description--text">Welcome!!</p>
+            <p class="main__description--text">Welcome!!</p>
+            <p class="main__description--text">Welcome!!</p>
+            <div class="main__description--repo">
+                <p>Do you want to be a collaborator? </p>
+                <a href="https://github.com/Oneago/arcturus-project">Fork in this repo <i class="fab fa-github"></i></a>
+            </div>
+        </div>
 
-        @media screen and (min-width: 800px) {
-            #forkongithub {
-                position: fixed;
-                display: block;
-                top: 0;
-                right: 0;
-                width: 200px;
-                overflow: hidden;
-                height: 200px;
-                z-index: 9999;
-            }
+        <p class="main__footer">
+            Created by Oneago and Supported by the community and Oneago
+        </p>
+    </div>
 
-            #forkongithub a {
-                width: 200px;
-                position: absolute;
-                top: 60px;
-                right: -60px;
-                transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-            }
-        }
-    </style>
-    <script src="{{ getJs('example.js') }}"></script>
-    <title>Page example</title>
-</head>
-<body>
-<span id="forkongithub"><a href="https://github.com/Oneago/oneago-php-template">Fork me on GitHub</a></span>
-<h1>{{ body }}</h1>
-<p>Created with ♥ by <a href=https://www.oneago.com/>Oneago</a></p>
-</body>
-</html>
+{% endblock %}

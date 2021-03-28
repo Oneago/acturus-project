@@ -10,6 +10,8 @@ class NotFoundController
 {
     public function index(): ViewResponse
     {
-        return template("NotFound");
+        return template("NotFound", [
+            "title" => "404"
+        ]);
     }
 }
