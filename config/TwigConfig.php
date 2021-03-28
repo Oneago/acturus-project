@@ -1,31 +1,29 @@
 <?php
 
 
-namespace App\Bases;
+namespace App\Config;
 
 
-use Oneago\AdaConsole\Bases\BaseTwigController;
-use Oneago\AdaConsole\Bases\MiddlewareInterface;
+use Oneago\Arcturus\Core\config\BaseTwigConfig;
 
 /**
- * Class TwigController is a basic twig loader
+ * Class TwigConfig is a basic twig loader
  */
-abstract class TwigController extends BaseTwigController
+abstract class TwigConfig extends BaseTwigConfig
 {
     /**
-     * TwigController constructor.
-     * @param MiddlewareInterface ...$middlewares
+     * TwigConfig constructor.
      */
-    public function __construct(MiddlewareInterface ...$middlewares)
+    public function __construct()
     {
-        parent::__construct(...$middlewares);
+        parent::__construct();
         $this->twigAdditions();
     }
 
     /**
      * Add global variables, functions and extensions to twig
      */
-    private function twigAdditions()
+    private function twigAdditions(): void
     {
         // Example custom twig additions
         /*

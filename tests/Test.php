@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class Test extends TestCase
 {
-    public function test()
+    public function test(): void
     {
         self::assertTrue(true); // Example
     }
