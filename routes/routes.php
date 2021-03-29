@@ -6,15 +6,15 @@ use Oneago\Arcturus\Core\Router\Router;
 
 $app = new Router;
 
-$app->get('/', function (Request $request) {
+$app->get('/', function (Request $request, array $args) {
     return view('welcome');
 });
 
-$app->get('/d', function (Request $request) {
-    return view('TestTest', 'Test');
+$app->get('/test/{var}/', function (Request $request, array $args) {
+    return $args['var'];
 });
 
-$app->post('/some/route', function (Request $request) {
+$app->post('/some/route', function (Request $request, array $args) {
 
 });
 

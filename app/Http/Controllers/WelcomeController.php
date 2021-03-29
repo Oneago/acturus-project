@@ -12,11 +12,16 @@ use Oneago\Arcturus\Core\Http\ViewResponse;
  */
 class WelcomeController
 {
-    public function index($view): ViewResponse
+    public function index(string $view, array $customVars = null): ViewResponse
     {
-        return template($view, [
+        $twigVars = [
             "body" => "Example page for basic php Oneago project",
             "title" => "Welcome!!"
-        ]);
+        ];
+
+        if ($customVars !== null) {
+            $twigVars = array_merge($customVars, $twigVars);
+        }
+        return template($view, $twigVars);
     }
 }

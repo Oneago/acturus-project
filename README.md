@@ -1,3 +1,5 @@
+![Imgur](https://i.imgur.com/yJH1jUV.png)
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/Oneago/arcturus-project)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ONEAGO/arcturus-project)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/Oneago/arcturus-project)
@@ -24,6 +26,12 @@ See this project in [packagist.org](https://packagist.org/packages/oneago/arctur
 
 ## Getting started
 
+### Composer installer
+
+`composer create-project oneago/arcturus-project <project-name>`
+
+### Arcturus CLI installer
+
 - [See installation gide here](https://github.com/Oneago/arcturus-installer/blob/main/README.md)
 
 - After install Arcturus CLI installer run in command line `arcturus <project name>` inside installation project
@@ -36,12 +44,11 @@ Arcturus implements 4 libraries that need previous documentation for the best be
 |-------------|-------------|---------------|
 | Twig        | Template engine for PHP with `.twig` extension inspired in Django templates with XSS attack protection | [twig 3.x docs](https://twig.symfony.com/doc/3.x/)
 | Phinx       | DPhinx makes it ridiculously easy to manage the database migrations for your PHP app. Phinx is just about migrations without all the bloat of a database ORM system or framework. | [Phinx 0.12 docs](https://book.cakephp.org/phinx/0/en/index.html)
-| Slim router | The Slim Framework’s router is built on top of the Fast Route component, and it is remarkably fast and stable. While we are using this component to do all our routing, the app’s core has been entirely decoupled from it and interfaces have been put in place to pave the way for using other routing libraries. | [Slim v4 docs](https://www.slimframework.com/docs/v4/)
 | phpunit     | PHPUnit is a programmer-oriented testing framework for PHP. It is an instance of the xUnit architecture for unit testing frameworks. | [PHPUnit docs](https://phpunit.de/documentation.html)
 
 ## Ada CLI available commands
 
-in project folder run `./ada` or `php ada` for script help
+in project folder run `./ada` (Linux) or `php ada` for script help
 
 ### docker
 
@@ -71,29 +78,29 @@ Create new project files
 
         php ada make:view [options] [--] <view name>
 
-  ### Arguments
-    - **view name**: Name for use in new view file and/or model file
+  ###  Arguments
+  - **view name**: Name for use in new view file and/or model file
 
-  ### Options
-    - `--dir` (`-d`): If need create view in a new or existing directory, use this option with directory name. Save view
-      in a folder for pretty viewer
-    - `--no-controller`: Only create a twig file in views directory and controller isn't create
+  ###  Options
+  - `--dir` (`-d`): If need create view in a new or existing directory, use this option with directory name. Save view
+    in a folder for pretty viewer
+  - `--no-controller`: Only create a twig file in views directory and controller isn't create
 
 - ### make:model
   Create a new model for this app
 
         php ada make:model <model name>  
 
-  ### Arguments
-    - **model name**: Name for use in new model
+  ###  Arguments
+  - **model name**: Name for use in new model
 
 - ### make:middleware
   Create a new middleware passing a name
 
         php ada make:middleware <middleware name>
 
-  ### Arguments
-    - **middleware name**: Name for use in new middleware
+  ###  Arguments
+  - **middleware name**: Name for use in new middleware
 
 ### run
 
@@ -101,16 +108,16 @@ Create new project files
   Make a zip with production project files
 
         php ada run:release [<name>]
-  ### Arguments
-    - **name**: Name for zip file [default: "release"]
+  ###  Arguments
+  - **name**: Name for zip file [default: "release"]
 
 - ### run:server
   Launch a php server
 
         php ada run:server <address> 
 
-  ### Arguments
-    - **address**: Address for run php host. Ex:`localhost:8090`
+  ###  Arguments
+  - **address**: Address for run php host. Ex:`localhost:8090`
 
 ### sass
 
@@ -121,21 +128,20 @@ Manage sass files. require sass installed in your system
 
         php ada sass:compile <name> 
 
-  ### Arguments
-    - **name**: Name for sass file. If name no have extension, the .sass extension is added automatically
+  ###  Arguments
+  - **name**: Name for sass file. If name no have extension, the .sass extension is added automatically
 
 - ### sass:new
   Compile a sass file in public_html/css
 
         php ada sass:new [options] [--] <name>
 
-  ### Arguments
-    - **name**: Name for a new sass file. If name no have extension, the .sass extension is added automatically
+  ###  Arguments
+  - **name**: Name for a new sass file. If name no have extension, the .sass extension is added automatically
 
-    ### Options
-    - `--component` (`-c`): If option is set, create a component y components directory otherwise create in css
-      directory
-    - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"]
+  ###  Options
+  - `--component` (`-c`): If option is set, create a component y components directory otherwise create in css directory
+  - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"]
 
 ### tsc
 
