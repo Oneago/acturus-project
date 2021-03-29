@@ -36,7 +36,7 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "filp/whoops": "^2.10",
+    "filp/whoops": "^2.11",
     "phpunit/phpunit": "^9.5",
     "symfony/console": "^5.2",
     "fakerphp/faker": "^1.13"
