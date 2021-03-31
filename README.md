@@ -117,7 +117,7 @@ Create new project files
         php ada run:server <address> 
 
   ###  Arguments
-  - **address**: Address for run php host. Ex:`localhost:8090`
+  - **address**: Address for run php host. E.g:`localhost:8090`
 
 ### sass
 
