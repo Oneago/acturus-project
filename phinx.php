@@ -5,6 +5,7 @@ use App\Config\DotEnvConfig;
 $dotenv = new DotEnvConfig();
 $dotenv->initConfigs();
 
+
 return
     [
         'paths' => [
@@ -32,13 +33,13 @@ return
                 'port' => $_ENV["DEBUG_DB_PORT"],
                 'charset' => 'utf8',
             ],
-            'testing' => [
-                'adapter' => 'mysql',
-                'host' => 'localhost',
-                'name' => 'testing_db',
-                'user' => 'root',
-                'pass' => '',
-                'port' => '3306',
+            'docker' => [
+                'adapter' => $_ENV["DOCKER_DB_ADAPTER"],
+                'host' => $_ENV["DOCKER_DB_HOST"],
+                'name' => $_ENV["DOCKER_DB_NAME"],
+                'user' => $_ENV["DOCKER_DB_USER"],
+                'pass' => $_ENV["DOCKER_DB_PASS"],
+                'port' => $_ENV["DOCKER_DB_PORT"],
                 'charset' => 'utf8',
             ]
         ],
