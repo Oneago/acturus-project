@@ -1,10 +1,12 @@
 <?php
 
 
-namespace App\Http\Models;
+namespace App\Models;
 
 
 use BadMethodCallException;
+use Oneago\Arcturus\Core\Database\Connection;
+
 
 class ExampleModel extends Connection
 {

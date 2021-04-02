@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf3015a81a6f74780489c368ab08fc14",
+    "content-hash": "2b14061fd37427c8712a6802f93aa80e",
     "packages": [
         {
             "name": "cakephp/core",
@@ -303,16 +303,16 @@
         },
         {
             "name": "oneago/arcturus-core",
-            "version": "v3.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oneago/arcturus-core.git",
-                "reference": "9f0ab1da7679d4dc11bee6accae8ef1c44849d5e"
+                "reference": "57f85ea2213608afa4296e8e7161e78a55d46b03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oneago/arcturus-core/zipball/9f0ab1da7679d4dc11bee6accae8ef1c44849d5e",
-                "reference": "9f0ab1da7679d4dc11bee6accae8ef1c44849d5e",
+                "url": "https://api.github.com/repos/Oneago/arcturus-core/zipball/57f85ea2213608afa4296e8e7161e78a55d46b03",
+                "reference": "57f85ea2213608afa4296e8e7161e78a55d46b03",
                 "shasum": ""
             },
             "require": {
@@ -321,6 +321,7 @@
                 "symfony/console": "^5.2",
                 "twig/twig": "^3.3"
             },
+            "default-branch": true,
             "bin": [
                 "bin/ada"
             ],
@@ -361,9 +362,9 @@
             "description": "Console for oneago/arcturus-project",
             "support": {
                 "issues": "https://github.com/Oneago/arcturus-core/issues",
-                "source": "https://github.com/Oneago/arcturus-core/tree/v3.0.0"
+                "source": "https://github.com/Oneago/arcturus-core/tree/master"
             },
-            "time": "2021-03-29T03:31:57+00:00"
+            "time": "2021-04-02T20:46:58+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -749,16 +750,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.2.5",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "938ebbadae1b0a9c9d1ec313f87f9708609f1b79"
+                "reference": "35f039df40a3b335ebf310f244cb242b3a83ac8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/938ebbadae1b0a9c9d1ec313f87f9708609f1b79",
-                "reference": "938ebbadae1b0a9c9d1ec313f87f9708609f1b79",
+                "url": "https://api.github.com/repos/symfony/console/zipball/35f039df40a3b335ebf310f244cb242b3a83ac8d",
+                "reference": "35f039df40a3b335ebf310f244cb242b3a83ac8d",
                 "shasum": ""
             },
             "require": {
@@ -826,7 +827,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.2.5"
+                "source": "https://github.com/symfony/console/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -842,7 +843,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-06T13:42:15+00:00"
+            "time": "2021-03-28T09:42:18+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -913,16 +914,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.2.4",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "710d364200997a5afde34d9fe57bd52f3cc1e108"
+                "reference": "8c86a82f51658188119e62cff0a050a12d09836f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/710d364200997a5afde34d9fe57bd52f3cc1e108",
-                "reference": "710d364200997a5afde34d9fe57bd52f3cc1e108",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/8c86a82f51658188119e62cff0a050a12d09836f",
+                "reference": "8c86a82f51658188119e62cff0a050a12d09836f",
                 "shasum": ""
             },
             "require": {
@@ -955,7 +956,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v5.2.4"
+                "source": "https://github.com/symfony/filesystem/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -971,7 +972,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-12T10:38:38+00:00"
+            "time": "2021-03-28T14:30:26+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1540,16 +1541,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.2.4",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "4e78d7d47061fa183639927ec40d607973699609"
+                "reference": "ad0bd91bce2054103f5eaa18ebeba8d3bc2a0572"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/4e78d7d47061fa183639927ec40d607973699609",
-                "reference": "4e78d7d47061fa183639927ec40d607973699609",
+                "url": "https://api.github.com/repos/symfony/string/zipball/ad0bd91bce2054103f5eaa18ebeba8d3bc2a0572",
+                "reference": "ad0bd91bce2054103f5eaa18ebeba8d3bc2a0572",
                 "shasum": ""
             },
             "require": {
@@ -1603,7 +1604,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v5.2.4"
+                "source": "https://github.com/symfony/string/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -1619,7 +1620,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-16T10:20:28+00:00"
+            "time": "2021-03-17T17:12:15+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -1701,16 +1702,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v5.2.5",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "f3b6854071486b20d27ba5f3148cf9fba73f670f"
+                "reference": "a65d8d38c66f147f29b73d53d14e8c9a983653b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/f3b6854071486b20d27ba5f3148cf9fba73f670f",
-                "reference": "f3b6854071486b20d27ba5f3148cf9fba73f670f",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/a65d8d38c66f147f29b73d53d14e8c9a983653b8",
+                "reference": "a65d8d38c66f147f29b73d53d14e8c9a983653b8",
                 "shasum": ""
             },
             "require": {
@@ -1755,9 +1756,9 @@
                 "symfony/web-link": "^4.4|^5.0",
                 "symfony/workflow": "^5.2",
                 "symfony/yaml": "^4.4|^5.0",
-                "twig/cssinliner-extra": "^2.12",
-                "twig/inky-extra": "^2.12",
-                "twig/markdown-extra": "^2.12"
+                "twig/cssinliner-extra": "^2.12|^3",
+                "twig/inky-extra": "^2.12|^3",
+                "twig/markdown-extra": "^2.12|^3"
             },
             "suggest": {
                 "symfony/asset": "For using the AssetExtension",
@@ -1801,7 +1802,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v5.2.5"
+                "source": "https://github.com/symfony/twig-bridge/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -1817,7 +1818,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-07T16:08:20+00:00"
+            "time": "2021-03-16T09:10:13+00:00"
         },
         {
             "name": "twig/twig",
@@ -2048,20 +2049,22 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.13.0",
+            "version": "v1.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "ab3f5364d01f2c2c16113442fb987d26e4004913"
+                "reference": "ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/ab3f5364d01f2c2c16113442fb987d26e4004913",
-                "reference": "ab3f5364d01f2c2c16113442fb987d26e4004913",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1",
+                "reference": "ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.0",
+                "psr/container": "^1.0",
+                "symfony/deprecation-contracts": "^2.2"
             },
             "conflict": {
                 "fzaninotto/faker": "*"
@@ -2069,9 +2072,20 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-intl": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.8 || ^9.4.2"
+                "symfony/phpunit-bridge": "^4.4 || ^5.2"
+            },
+            "suggest": {
+                "ext-curl": "Required by Faker\\Provider\\Image to download images.",
+                "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
+                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
+                "ext-mbstring": "Required for multibyte Unicode string functionality."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "v1.15-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Faker\\": "src/Faker/"
@@ -2094,22 +2108,22 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.13.0"
+                "source": "https://github.com/FakerPHP/Faker/tree/v.1.14.1"
             },
-            "time": "2020-12-18T16:50:48+00:00"
+            "time": "2021-03-30T06:27:33+00:00"
         },
         {
             "name": "filp/whoops",
-            "version": "2.11.0",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "f6e14679f948d8a5cfb866fa7065a30c66bd64d3"
+                "reference": "d501fd2658d55491a2295ff600ae5978eaad7403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/f6e14679f948d8a5cfb866fa7065a30c66bd64d3",
-                "reference": "f6e14679f948d8a5cfb866fa7065a30c66bd64d3",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/d501fd2658d55491a2295ff600ae5978eaad7403",
+                "reference": "d501fd2658d55491a2295ff600ae5978eaad7403",
                 "shasum": ""
             },
             "require": {
@@ -2159,7 +2173,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.11.0"
+                "source": "https://github.com/filp/whoops/tree/2.12.0"
             },
             "funding": [
                 {
@@ -2167,7 +2181,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-19T12:00:00+00:00"
+            "time": "2021-03-30T12:00:00+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3046,12 +3060,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "d113d94cd9d8bc7ec35be1179315ed06b21b26c8"
+                "reference": "0a55b3eacf6b4a0fdc6ec9d01e00285ca9942b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d113d94cd9d8bc7ec35be1179315ed06b21b26c8",
-                "reference": "d113d94cd9d8bc7ec35be1179315ed06b21b26c8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0a55b3eacf6b4a0fdc6ec9d01e00285ca9942b2b",
+                "reference": "0a55b3eacf6b4a0fdc6ec9d01e00285ca9942b2b",
                 "shasum": ""
             },
             "conflict": {
@@ -3122,6 +3136,7 @@
                 "firebase/php-jwt": "<2",
                 "flarum/sticky": ">=0.1-beta.14,<=0.1-beta.15",
                 "flarum/tags": "<=0.1-beta.13",
+                "fluidtypo3/vhs": "<5.1.1",
                 "fooman/tcpdf": "<6.2.22",
                 "fossar/tcpdf-parser": "<6.2.22",
                 "friendsofsymfony/oauth2-php": "<1.3",
@@ -3165,6 +3180,7 @@
                 "mediawiki/core": ">=1.27,<1.27.6|>=1.29,<1.29.3|>=1.30,<1.30.2|>=1.31,<1.31.9|>=1.32,<1.32.6|>=1.32.99,<1.33.3|>=1.33.99,<1.34.3|>=1.34.99,<1.35",
                 "mittwald/typo3_forum": "<1.2.1",
                 "monolog/monolog": ">=1.8,<1.12",
+                "moodle/moodle": "<3.5.17|>=3.7,<3.7.9|>=3.8,<3.8.8|>=3.9,<3.9.5|>=3.10,<3.10.2",
                 "namshi/jose": "<2.2",
                 "nette/application": ">=2,<2.0.19|>=2.1,<2.1.13|>=2.2,<2.2.10|>=2.3,<2.3.14|>=2.4,<2.4.16|>=3,<3.0.6",
                 "nette/nette": ">=2,<2.0.19|>=2.1,<2.1.13",
@@ -3199,6 +3215,7 @@
                 "phpxmlrpc/extras": "<0.6.1",
                 "pimcore/pimcore": "<6.8.8",
                 "pocketmine/pocketmine-mp": "<3.15.4",
+                "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
                 "prestashop/contactform": ">1.0.1,<4.3",
                 "prestashop/gamification": "<2.3.2",
@@ -3373,7 +3390,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-26T11:01:20+00:00"
+            "time": "2021-03-29T21:01:39+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -4451,6 +4468,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "oneago/arcturus-core": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
