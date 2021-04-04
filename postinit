@@ -15,7 +15,7 @@ class DefaultCommand extends Command
 
     protected function configure()
     {
-        $this->setDescription('Outputs "Hello World"');
+        $this->setDescription('Config project');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -28,9 +28,6 @@ class DefaultCommand extends Command
         }
         if (!mkdir("db/seeds") && !is_dir("db/seeds")) {
             throw new RuntimeException(sprintf('Directory "%s" was not created', "db/seeds"));
-        }
-        if (!mkdir("models") && !is_dir("models")) {
-            throw new RuntimeException(sprintf('Directory "%s" was not created', "models"));
         }
         if (!file_exists(".env")) {
             copy(".env.example", ".env");
