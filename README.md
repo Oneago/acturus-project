@@ -73,6 +73,11 @@ Manage project containers. require docker-compose and docker installed in your s
 
 Create new project files
 
+- ### make:api
+  Create a new api for this app
+
+        php ada make:api [options] [--] <api name>
+  
 - ### make:view
   Create a new view passing a name
 

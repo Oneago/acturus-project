@@ -10,7 +10,6 @@ $dotenv = new DotEnvConfig();
 if ($_ENV["DEBUG_MODE"] ?? true) {
     ini_set('display_errors', true);
     ini_set('display_startup_errors', true);
-    error_reporting(E_ALL);
     new WhoopsConfig($dotenv->getVars());
 }
 $dotenv->initConfigs();

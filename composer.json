@@ -32,7 +32,7 @@
     "symfony/twig-bridge": "^5.2",
     "robmorgan/phinx": "^0.12.6",
     "vlucas/phpdotenv": "^5.3",
-    "oneago/arcturus-core": "dev-master"
+    "oneago/arcturus-core": "^3.1"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
