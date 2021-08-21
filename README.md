@@ -146,6 +146,7 @@ Manage sass files. require sass installed in your system
 
   ###  Options
   - `--component` (`-c`): If option is set, create a component y components directory otherwise create in css directory
+  - `--dir` (`-d`): Will be create sass file in directory, no use --component or -c options because no will be create folder
   - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"]
 
 ### tsc
