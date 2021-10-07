@@ -6,20 +6,22 @@ namespace App\Objects;
 
 class User
 {
+    private int $id;
+    private string $user;
+    private string $email;
 
     /**
-     * User constructor.
      * @param int $id
      * @param string $user
      * @param string $email
      */
-    public function __construct(
-        private int $id,
-        private string $user,
-        private string $email,
-    )
+    public function __construct(int $id, string $user, string $email)
     {
+        $this->id = $id;
+        $this->user = $user;
+        $this->email = $email;
     }
+
 
     /**
      * @return int

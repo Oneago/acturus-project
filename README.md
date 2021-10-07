@@ -17,7 +17,7 @@ See this project in [packagist.org](https://packagist.org/packages/oneago/arctur
 
 ## System requirements
 
-- **PHP 8.0 or latest**
+- **PHP 7.4 or latest**
 - **Composer**
 - **docker-compose** (Optional for docker server run)
 - **npm** (Optional for Typescrippt compile)

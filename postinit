@@ -13,20 +13,20 @@ class DefaultCommand extends Command
 {
     protected static $defaultName = 'postinit';
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setDescription('Config project');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        if (!mkdir("db") && !is_dir("db")) {
+        if (!file_exists("db") && !mkdir("db") && !is_dir("db")) {
             throw new RuntimeException(sprintf('Directory "%s" was not created', "db"));
         }
-        if (!mkdir("db/migrations") && !is_dir("db/migrations")) {
+        if (!file_exists("db/migrations") && !mkdir("db/migrations") && !is_dir("db/migrations")) {
             throw new RuntimeException(sprintf('Directory "%s" was not created', "db/migrations"));
         }
-        if (!mkdir("db/seeds") && !is_dir("db/seeds")) {
+        if (!file_exists("db/seeds") && !mkdir("db/seeds") && !is_dir("db/seeds")) {
             throw new RuntimeException(sprintf('Directory "%s" was not created', "db/seeds"));
         }
         if (!file_exists(".env")) {

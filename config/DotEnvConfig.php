@@ -20,7 +20,7 @@ class DotEnvConfig
         $this->vars = $this->dotenv->load();
     }
 
-    public function initConfigs()
+    public function initConfigs(): void
     {
         $this->dotenv->required("DEBUG_MODE")->allowedValues(["1", "0"]);
         $this->dotenv->required(["EDITOR_COMMAND"])->allowedValues(["sublime", "textmate", "emacs", "macvim", "phpstorm", "idea", "vscode", "atom", "espresso"])->notEmpty();

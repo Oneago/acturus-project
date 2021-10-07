@@ -1,4 +1,4 @@
-FROM php:8.0.2-apache-buster
+FROM php:8.0.11-apache-buster
 
 ARG DEBIAN_FRONTEND=noninteractive
 
