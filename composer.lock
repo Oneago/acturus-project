@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93600cd0a8e1389774d5d1f9ea40f77b",
+    "content-hash": "9383f0c8f4c824c04878e7f727a82351",
     "packages": [
         {
             "name": "cakephp/core",
-            "version": "4.2.9",
+            "version": "4.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/core.git",
-                "reference": "dcb38950fa3bd722856f923ea8e4657ffcac78a7"
+                "reference": "a99b4fef0e7c17bcf3cab659130963c0d6074805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/core/zipball/dcb38950fa3bd722856f923ea8e4657ffcac78a7",
-                "reference": "dcb38950fa3bd722856f923ea8e4657ffcac78a7",
+                "url": "https://api.github.com/repos/cakephp/core/zipball/a99b4fef0e7c17bcf3cab659130963c0d6074805",
+                "reference": "a99b4fef0e7c17bcf3cab659130963c0d6074805",
                 "shasum": ""
             },
             "require": {
@@ -61,20 +61,20 @@
                 "issues": "https://github.com/cakephp/cakephp/issues",
                 "source": "https://github.com/cakephp/core"
             },
-            "time": "2021-07-24T07:50:13+00:00"
+            "time": "2021-09-11T20:25:27+00:00"
         },
         {
             "name": "cakephp/database",
-            "version": "4.2.9",
+            "version": "4.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/database.git",
-                "reference": "b41ccd93717f690a78e7564c4308de01b58cec5f"
+                "reference": "d3c4c632289592e9f9f7f384232e1d99a1cad7e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/database/zipball/b41ccd93717f690a78e7564c4308de01b58cec5f",
-                "reference": "b41ccd93717f690a78e7564c4308de01b58cec5f",
+                "url": "https://api.github.com/repos/cakephp/database/zipball/d3c4c632289592e9f9f7f384232e1d99a1cad7e5",
+                "reference": "d3c4c632289592e9f9f7f384232e1d99a1cad7e5",
                 "shasum": ""
             },
             "require": {
@@ -116,11 +116,11 @@
                 "issues": "https://github.com/cakephp/cakephp/issues",
                 "source": "https://github.com/cakephp/database"
             },
-            "time": "2021-09-09T20:17:17+00:00"
+            "time": "2021-09-29T17:24:01+00:00"
         },
         {
             "name": "cakephp/datasource",
-            "version": "4.2.9",
+            "version": "4.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/datasource.git",
@@ -178,7 +178,7 @@
         },
         {
             "name": "cakephp/utility",
-            "version": "4.2.9",
+            "version": "4.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/utility.git",
@@ -237,16 +237,16 @@
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "84afea85c6841deeea872f36249a206e878a5de0"
+                "reference": "296c015dc30ec4322168c5ad3ee5cc11dae827ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/84afea85c6841deeea872f36249a206e878a5de0",
-                "reference": "84afea85c6841deeea872f36249a206e878a5de0",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/296c015dc30ec4322168c5ad3ee5cc11dae827ac",
+                "reference": "296c015dc30ec4322168c5ad3ee5cc11dae827ac",
                 "shasum": ""
             },
             "require": {
@@ -282,7 +282,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
-                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.2"
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.3"
             },
             "funding": [
                 {
@@ -294,20 +294,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-28T21:34:50+00:00"
+            "time": "2021-10-17T19:48:54+00:00"
         },
         {
             "name": "oneago/arcturus-core",
-            "version": "v4.0.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oneago/arcturus-core.git",
-                "reference": "3e2a3f5b461e94f18cd09bb39f0681960a78fe33"
+                "reference": "824881abb399fbc1d69484987d7b8a516509a5b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oneago/arcturus-core/zipball/3e2a3f5b461e94f18cd09bb39f0681960a78fe33",
-                "reference": "3e2a3f5b461e94f18cd09bb39f0681960a78fe33",
+                "url": "https://api.github.com/repos/Oneago/arcturus-core/zipball/824881abb399fbc1d69484987d7b8a516509a5b3",
+                "reference": "824881abb399fbc1d69484987d7b8a516509a5b3",
                 "shasum": ""
             },
             "require": {
@@ -357,9 +357,9 @@
             "description": "Console for oneago/arcturus-project",
             "support": {
                 "issues": "https://github.com/Oneago/arcturus-core/issues",
-                "source": "https://github.com/Oneago/arcturus-core/tree/v4.0.0"
+                "source": "https://github.com/Oneago/arcturus-core/tree/v5.0.0"
             },
-            "time": "2021-10-06T23:16:33+00:00"
+            "time": "2021-10-22T02:18:53+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -581,16 +581,16 @@
         },
         {
             "name": "robmorgan/phinx",
-            "version": "0.12.8",
+            "version": "0.12.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/phinx.git",
-                "reference": "d2ed1b452cc90f4cae4ea6b5976b94fb9e5ed2a2"
+                "reference": "5a0146a74c1bc195d1f5da86afa3b68badf7d90e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/phinx/zipball/d2ed1b452cc90f4cae4ea6b5976b94fb9e5ed2a2",
-                "reference": "d2ed1b452cc90f4cae4ea6b5976b94fb9e5ed2a2",
+                "url": "https://api.github.com/repos/cakephp/phinx/zipball/5a0146a74c1bc195d1f5da86afa3b68badf7d90e",
+                "reference": "5a0146a74c1bc195d1f5da86afa3b68badf7d90e",
                 "shasum": ""
             },
             "require": {
@@ -661,9 +661,9 @@
             ],
             "support": {
                 "issues": "https://github.com/cakephp/phinx/issues",
-                "source": "https://github.com/cakephp/phinx/tree/0.12.8"
+                "source": "https://github.com/cakephp/phinx/tree/0.12.9"
             },
-            "time": "2021-07-28T15:31:39+00:00"
+            "time": "2021-10-12T10:49:25+00:00"
         },
         {
             "name": "symfony/config",
@@ -2540,16 +2540,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.2",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/622548b623e81ca6d78b721c5e029f4ce664f170",
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170",
                 "shasum": ""
             },
             "require": {
@@ -2560,7 +2560,8 @@
                 "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "mockery/mockery": "~1.3.2"
+                "mockery/mockery": "~1.3.2",
+                "psalm/phar": "^4.8"
             },
             "type": "library",
             "extra": {
@@ -2590,9 +2591,9 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.3.0"
             },
-            "time": "2020-09-03T19:13:55+00:00"
+            "time": "2021-10-19T17:43:47+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -4391,6 +4392,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {

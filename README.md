@@ -20,8 +20,7 @@ See this project in [packagist.org](https://packagist.org/packages/oneago/arctur
 - **PHP 7.4 or latest**
 - **Composer**
 - **docker-compose** (Optional for docker server run)
-- **npm** (Optional for Typescrippt compile)
-- **sass** (Optional for sass compile)
+- **npm** (Optional for Typescript and Sass compile)
 - **git** (Optional for version control)
 
 ## Getting started
@@ -129,15 +128,12 @@ Create new project files
 Manage sass files. require sass installed in your system
 
 - ### sass:compile
-  Compile a sass file in public_html/css
+  Compile all sass files in app/sass
 
-        php ada sass:compile <name> 
-
-  ###  Arguments
-  - **name**: Name for sass file. If name no have extension, the .sass extension is added automatically
+        php ada sass:compile
 
 - ### sass:new
-  Compile a sass file in public_html/css
+  Compile a sass file in app/sass
 
         php ada sass:new [options] [--] <name>
 
@@ -149,11 +145,19 @@ Manage sass files. require sass installed in your system
   - `--dir` (`-d`): Will be create sass file in directory, no use --component or -c options because no will be create folder
   - `--parent` (`-p`): sass parent to add component import on css directory [default: "style.scss"]
 
+- ### sass:watch
+  This command autocompile a sass file in app/sass
+
+        php ada sass:watch <name>
+
+  ###  Arguments
+  - **name**: Name for sass file
+
 ### tsc
 
 Manage Typescript files. require npm installed in your system
 
 - ### tsc:compile
-  Compile all ts files in public_html/js directory
+  Compile all ts files in app/typescript
 
         php ada tsc:compile

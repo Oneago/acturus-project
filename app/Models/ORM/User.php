@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Objects;
+namespace App\Models\ORM;
 
 
 class User
