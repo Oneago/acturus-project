@@ -38,6 +38,10 @@ abstract class TwigConfig extends BaseTwigConfig
         $this->templateEngine->addFilter(new TwigFilter('tester', function(string $param) {                         // Add filter
             return $param;
         }));
+        
+        $this->templateEngine->addFunction(new TwigFunction('strftime', function (string $format, int $timestamp) {
+            return strftime($format, $timestamp);
+        }));
         */
     }
 }
