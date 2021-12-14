@@ -37,6 +37,7 @@ class DefaultCommand extends Command
         }
         exec("git add .");
         exec("npm install");
+        exec("php ada sass:compile");
         exec("php ada tsc:compile");
         return self::SUCCESS;
     }
