@@ -14,7 +14,7 @@ return
         ],
         'environments' => [
             'default_migration_table' => 'phinxlog',
-            'default_environment' => 'development',
+            'default_environment' => 'docker',
             'production' => [
                 'adapter' => $_ENV["PRODUCTION_DB_ADAPTER"],
                 'host' => $_ENV["PRODUCTION_DB_HOST"],
