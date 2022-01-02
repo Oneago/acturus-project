@@ -19,7 +19,7 @@ out
 release
 
 ## TypeScript output
-/public_html/js/*.js
+/public_html/js/*.js*
 
 # PHPUnit
 .phpunit.result.cache
