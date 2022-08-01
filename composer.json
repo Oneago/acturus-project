@@ -29,16 +29,16 @@
     "ext-pdo": "*",
     "ext-zip": "*",
     "twig/twig": "^3.3",
-    "symfony/twig-bridge": "^5.2",
-    "robmorgan/phinx": "^0.12.6",
+    "symfony/twig-bridge": "^6.1",
+    "robmorgan/phinx": "^0.12",
     "vlucas/phpdotenv": "^5.3",
-    "oneago/arcturus-core": "^5.0"
+    "oneago/arcturus-core": "^5.1"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "filp/whoops": "^2.11",
+    "filp/whoops": "^2.14",
     "phpunit/phpunit": "^9.5",
-    "symfony/console": "^5.2",
+    "symfony/console": "^6.1",
     "fakerphp/faker": "^1.13"
   },
   "autoload": {
