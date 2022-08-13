@@ -39,7 +39,8 @@
     "filp/whoops": "^2.14",
     "phpunit/phpunit": "^9.5",
     "symfony/console": "^6.1",
-    "fakerphp/faker": "^1.13"
+    "fakerphp/faker": "^1.13",
+    "symfony/var-dumper": "^6.1"
   },
   "autoload": {
     "psr-4": {
