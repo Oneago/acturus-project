@@ -1,11 +1,58 @@
-{% extends "Template.twig" %}
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #FFFFFF;
+        }
 
-{% block content %}
+        .main {
+            width: 100%;
+            height: 100vh;
+            background: #203242;
+        }
 
+        .mainNotFound {
+            height: 100%;
+            margin: auto 30%;
+        }
+
+        .main__notFound {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .main__notFound--img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .main__description > p {
+            margin-bottom: 1rem;
+        }
+    </style>
+    <title>404 - {{ ENV.APP_NAME }}</title>
+</head>
+<body>
+<article class="main">
     <div class="mainNotFound">
         <figure class="main__notFound">
             <img src="https://i.imgur.com/n0HmkQE.png" alt="404 not found" class="main__notFound--img">
         </figure>
     </div>
-
-{% endblock %}
+</article>
+</body>
+</html>
